@@ -23,3 +23,4 @@ git remote set-url origin <URL_CORRECTA>
 **podemos usar git status para obtener una info detallada del estado de nuestro repo**
 **hola**m
 gla corazon
+en fin
