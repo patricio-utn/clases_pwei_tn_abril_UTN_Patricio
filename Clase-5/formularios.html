@@ -7,15 +7,35 @@
 </head>
 <body>
     <h1>etiqueta form</h1>
-    <form>
+        <form><!-- el atributo action lo vemos despues, esta etiqueta la usamos para poner formularios, y se puede escribir las etiquetas que quiero, la mas      importante son las etiquetas de entradas de datos como input. -->
         <div>
             <label for="username">ingresa tu nombre de usuario:</label> <!-- esta etiqueta sirve para saber de que se trata este input -->
             <input type="text" name="username" id="username" placeholder="patricio bustos"><!-- en id ponemos lo mismo que en el atributo for de label, sirve para que cuadno haga clic en el titulo de label se marque la casilla de inputi, en mi navegador --> <!-- y placeholder es un ejemplo de lo que se debe ingresar en la casilla --> 
         </div> <!-- con div genero bloques, es decir encierro un grupo de etiquetas para que queden en un bloque.  -->
+       
+        </form> 
+    <form>
         <div>
-            <label for="password">ingrese el password</label>
-            <input type="password" name="contraseña" id="password" placeholder="123456">
+            <label for="usernam">pone el nombre</label>
+            <input type="text" name=" " id="usernam" placeholder="Luis Bustos"> <!-- en name ponemos para que sirve el input -->
+        </div> 
+        <div>
+            <label for="pass">pone el pass</label>
+            <input type="password" name="password" id="pass" placeholder="123456"> <!-- puedo hacer un input para password, en ese caso pongo en type la etiqueta "password" -->
         </div>
-    </form> <!-- el atributo action lo vemos despues, esta etiqueta la usamos para poner formularios, y se puede escribir las etiquetas que quiero, la mas importante son las etiquetas de entradas de datos como input. -->
+       
+        <div>
+            <label for="email">poner mail please</label>
+            <input type="email" name="email" id="email" required maxlength="32" minlength=""> <!--  con este imput pongo el email en el formulario --> <!-- el atributo required me obliga a poner el dato que se pide, es un atributo que se puede poner en cualquier imput --> <!--  maxlength="" me indica la maxima cantidad de caractreres a poner en un campo --> <!-- minlength="" la minima cantidad de caracteres -->
+        </div>
+        <div>
+            <input type="submit" value="confirmar"> <!-- ESTE INPUT SIRVE PARA ENVAIR EL FORMULARIO Y EN VALUE PONGO EL TEXTO QUE QUIERO -->+
+            <button type="submit">enviar❤️</button> <!-- este button hace lo mismo que inout type submit, la diferencia es que me deja poner un emoticon -->
+        </div>
+        <div>
+            <label for=""> selecciona </label>
+        </div>
+    </form>
+
 </body>
 </html>
