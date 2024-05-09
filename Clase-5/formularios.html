@@ -7,16 +7,16 @@
 </head>
 <body>
     <h1>etiqueta form</h1>
-        <form>
-            <label for="">holii</label>
-            <input type="text"><!-- el atributo action lo vemos despues, esta etiqueta la usamos para poner formularios, y se puede escribir las etiquetas que quiero, la mas      importante son las etiquetas de entradas de datos como input. -->
-        </form> 
-        <form> <!-- el atributo action lo vemos despues, esta etiqueta la usamos para poner formularios, y se puede escribir las etiquetas que quiero, la mas   importante son las etiquetas de entradas de datos como input. -->
-            <div>
-                <label for="username">ingresa tu nombre de usuario:</label> <!-- esta etiqueta sirve para saber de que se trata este input -->
-                <input type="text" name="username" id="username" placeholder="patricio bustos"><!-- en id ponemos lo mismo que en el atributo for de label, sirve para que cuadno haga clic en el titulo de label se marque la casilla de inputi, en mi navegador --> <!-- y placeholder es un ejemplo de lo que se debe ingresar en la casilla --> 
-            </div> <!-- con div genero bloques, es decir encierro un grupo de etiquetas para que queden en un bloque.  -->
-        </form> 
+    <form>
+        <label for="">holii</label>
+        <input type="text"><!-- el atributo action lo vemos despues, esta etiqueta la usamos para poner formularios, y se puede escribir las etiquetas que quiero, la mas      importante son las etiquetas de entradas de datos como input. -->
+    </form> 
+    <form> <!-- el atributo action lo vemos despues, esta etiqueta la usamos para poner formularios, y se puede escribir las etiquetas que quiero, la mas   importante son las etiquetas de entradas de datos como input. -->
+        <div>
+            <label for="username">ingresa tu nombre de usuario:</label> <!-- esta etiqueta sirve para saber de que se trata este input -->
+            <input type="text" name="username" id="username" placeholder="patricio bustos"><!-- en id ponemos lo mismo que en el atributo for de label, sirve para que cuadno haga clic en el titulo de label se marque la casilla de inputi, en mi navegador --> <!-- y placeholder es un ejemplo de lo que se debe ingresar en la casilla --> 
+        </div> <!-- con div genero bloques, es decir encierro un grupo de etiquetas para que queden en un bloque.  -->
+    </form> 
     <form>
         <div>
             <label for="usernam">pone el nombre</label>
@@ -36,7 +36,21 @@
             <button type="submit">enviar❤️</button> <!-- este button hace lo mismo que inout type submit, la diferencia es que me deja poner un emoticon -->
         </div>
         <div>
-            <label for=""> selecciona </label>
+            <label for="pais"> selecciona un pais:</label> <!-- se pone tambien un label -->
+            <select name="pais" id="pais"> <!-- y se pone la opcion select --> <!-- y dentro de select se pone option, en este caso -->
+                <option value="AR">Argentina ❤️</option> <!-- y aca elegimos lo que querramos que se seleccione, osea la lista, en este caso paises -->
+                <option value="NO" selected disabled>No seleccionadO</option> <!-- si pongo esta etiqueta me aparece en este caso "no seleccionado" siempre o cada vez que abro la pagina, no importa el orden de como esten ubicadas las opciones --> <!-- y si pongo disabled se pone en modo de si o si elegir una opcion, en este caso si o si hay que elegir o argentina o francia -->
+                <option value="FR">Francia</option> <!--  es una option para cada cosa que queremos poner -->
+            </select>
+        </div>
+        <div>
+            <label for="pais-1">seleccione un pais</label>
+                <span>Argentina</span> <input type="radio" name="pais-1" id="ar"> <!-- poner asi el radio es otra forma de elegir los paises, en este caso no es necesario y no se hace el poner en "for" el mismo "id", hay que poner otra cosa, en este caso ar y fr -->
+                <span>Francia</span> <input type="radio" name="pais-1" id="fr">
+        </div>
+        <div>
+            <label for="mensaje">ingrese su mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Hola chango, pone algo aca"></textarea> <!-- esto es para poner un cudrado y poner algun texto, con cols elijo un numero de cxaracteres determinados de linea y rows de columna, parecido a twiter cuando solo permitia 140, aca si se pone el for igual al id caracteres -->
         </div>
     </form>
 </body>
