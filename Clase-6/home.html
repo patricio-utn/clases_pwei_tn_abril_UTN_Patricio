@@ -4,26 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style><!-- todo lo que escriba aca el navegador lo va a interpretar como css -->
-        h2{
-            color: rgb(236, 49, 236);
-            font-size: 80px;
-        }
-        .subtitulo-especial{ /* este es el estilo que use para subtitulo especial, se hace asi con el punto. */
-            color: green;
-        } /* todo lo que esta adelante de la primera llave se le llama selector y va a determinar los cambios */
-        *{
-            font-family: sans-serif; /* si pongo el asterisco estoy diciendo qeu todo (x cosa) tenga una particularidad, en este caso todas las palabras tendran la letra sin serfifa, unas patitas que que forman parte de las letras. */
-        }
-        .super-especial{
-            color: rgb(252, 152, 11);
-        }
-        h1{
-            color: grey;
-            font-size: 100px;
-            }
-        
-    </style>
+    <link rel="stylesheet" href="./estilos.css">
 </head> <!-- CSS=Cascading Style Sheet / hoja de estilo en cascada-->
 <body>
     <header>
@@ -36,10 +17,14 @@
         <section>
             <h1>busca los mejores precios 😊</h1>
         </section>
-        <h2 class="super-especial">subtitulo</h2> 
-        <h2>hola</h2>
+        <h2 class="subtitulo-especial">subtitulo</h2> 
+        <h2 class="subtitulo-especial">hola</h2>
         <h2 class="subtitulo-especial">subtitulo especial</h2><!-- para ponerle a este h2 un color especial(porque en estilos le puse a h2 otro color) pero a este h2 le quiero poner otro color distinto al que puse ne estilos, se usa una class y en estilo lo llamo con el punto.-->
-        <h2 class="subtitulo-especial super-especial">subtitulo super especial</h2>
+        <h2 class="subtitulo-especial este">subtitulo super especial</h2>
+        <h2 class="este">pepito</h2>
+        <h2 class="super-especial este subtitulo-especial">gladys</h2>
+        <h2 class="subtitulo-especial">holiii</h2>
+        <h2>guau</h2>
     </main>
 </body>
 </html>

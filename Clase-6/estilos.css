@@ -1,0 +1,26 @@
+h2{
+    color: #31ec3a;
+    font-size: 80px
+    }
+.subtitulo-especial{ /* este es el estilo que use para subtitulo especial, se hace asi con el punto. */
+    color: green;
+} /* todo lo que esta adelante de la primera llave se le llama selector y va a determinar los cambios */
+*{
+    font-family: sans-serif; /* si pongo el asterisco estoy diciendo qeu todo (x cosa) tenga una particularidad, en este caso todas las palabras tendran la letra sin serfifa, unas patitas que que forman parte de las letras. */
+}
+.super-especial{
+    color: rgb(252, 152, 11);
+}
+h1{
+    color: grey;
+    font-size: 100px;
+    }
+.subtitulo-especial{
+    color: rgb(255, 0, 85); /* el ultimo selector define si hay dos iguales */
+    font-size: 20px;
+}
+.este{
+    color: black;
+    font-size: 70px;  
+    
+}
