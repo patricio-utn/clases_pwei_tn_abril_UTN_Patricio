@@ -26,3 +26,6 @@ h2{
 h3{
     font-family: "Danfo", serif; /* en est ecaso hise lo mismo, pero le puse otra fuente, hay que hace rlo mismo, importarla de google font o traerla de la carpeta fonts. */
 }
+.pop{
+    font-family: "Poppins", sans-serif ;
+}
