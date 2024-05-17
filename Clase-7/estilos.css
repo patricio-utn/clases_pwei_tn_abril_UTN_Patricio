@@ -1,4 +1,28 @@
-h1{
-    color: aqua;
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+    /* aca pego la fuente que importe de google font, en este caso traje la fuente poppins */ /* se puede hacer una carpeta font.css y poner la fuente, se pone import url y en las comillas ./ y busco a carpeta */
+*{
+    font-family: "Poppins", sans-serif;
+}
+    h1{
+    color: aqua;/* aca estamos viendo distintos estilos de TEXTOS en css, hay muchismos mas, hay que chusmearlos */
+    font-size: 80px;
+    letter-spacing: -2px;
+    word-spacing: 0px;
+    text-decoration: underline;
+    text-shadow: 
+    1px -42px 7px rgba(237,0,199,0.59), /* se pueden poner muchas sombras y ir jugando */
+    1px -42px 7px rgba(237,0,199,0.62),
+    1px -42px 7px rgba(237,0,199,0.40); /* si dejo de poner mas sombras no se pone la coma */
+    background-color: black; /* esto hace un color de fondo */
+    width: 200px; /* se usa para mnodificar el ancho del backcolor */
+    height: 100px; /*se usa para mnodificar el largo del backcolor  */
+    text-align: center; /* centrar  */
+    font-family: "Poppins", sans-serif ; /* aca puedo elegir la fuente */ /* para elegir otra fuente voy a google fonts se usa mucho poppins e inter */ /* PARA PONER LA FUENTE DE GOOGLE FONTS PEGAR EL CODIGO DE GOOGLE Y PONERLO ACA */
+}
+h2{
+    font-family: "Poppins", sans-serif;
+}
+h3{
+    font-family: "Danfo", serif; /* en est ecaso hise lo mismo, pero le puse otra fuente, hay que hace rlo mismo, importarla de google font o traerla de la carpeta fonts. */
 }
