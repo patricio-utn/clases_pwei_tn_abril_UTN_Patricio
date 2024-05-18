@@ -19,6 +19,7 @@
     height: 100px; /*se usa para mnodificar el largo del backcolor  */
     text-align: center; /* centrar  */
     font-family: "Poppins", sans-serif ; /* aca puedo elegir la fuente */ /* para elegir otra fuente voy a google fonts se usa mucho poppins e inter */ /* PARA PONER LA FUENTE DE GOOGLE FONTS PEGAR EL CODIGO DE GOOGLE Y PONERLO ACA */
+    font-weight: 100;
 }
 h2{
     font-family: "Poppins", sans-serif;
@@ -28,4 +29,14 @@ h3{
 }
 .pop{
     font-family: "Poppins", sans-serif ;
+}
+li{color: blueviolet;}
+.rojo{color: red;
+font-family: "Danfo", serif;}
+.parrafo{
+    font-weight: 300;
+    }
+.fondo{
+    background-color: aquamarine;
+    width: 63px;
 }

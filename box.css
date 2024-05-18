@@ -1,0 +1,13 @@
+
+
+span{
+   color: green;
+   background-color: #f1f10a;
+   width: 400px;
+   display: inline-block; /* usando display inline-block hago que una etiqueta se pueda modificar el bloque, porqu ealgunas no se puede modificar.Entonces, usando esta propiedad ya puedo usar el width, para modificar alto y ancho */
+}
+/* algunas etiquetas me toma el background en bloque y otras en linea 
+en bloque: div, header, nav, section, article, aside, footer, body, h1, h2, h3 etc, p, form, ul, li
+en linea: label, a, span, b, strong, i, y una tercera categoria es in-line block: son las de multimedia como por ejemplo, img, input, button, textarea, video, iframe, audio, a estas se les puede dar alto y ancho, A inline no se le puede dar alto y ancho*/
+
+}
