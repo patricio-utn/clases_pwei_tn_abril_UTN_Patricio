@@ -1,9 +1,9 @@
 
 
 span{
-   color: green;
-   background-color: #f1f10a;
-   width: 400px;
+    color: green;
+    background-color: #f1f10a;
+    width: 400px;
    display: inline-block; /* usando display inline-block hago que una etiqueta se pueda modificar el bloque, porqu ealgunas no se puede modificar.Entonces, usando esta propiedad ya puedo usar el width y el height, para modificar alto y ancho */
 }
 /* algunas etiquetas me toma el background en bloque y otras en linea 
