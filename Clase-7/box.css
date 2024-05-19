@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+*{
+    font-family: "Poppins", sans-serif;
+}
+*{
+    box-sizing: content-box;
+}
 span{
     color: green;
     background-color: #f1f10a;
@@ -9,4 +15,40 @@ span{
 /* algunas etiquetas me toma el background en bloque y otras en linea 
 en bloque: div, header, nav, section, article, aside, footer, body, h1, h2, h3 etc, p, form, ul, li
 en linea: label, a, span, b, strong, i, y una tercera categoria es in-line block: son las de multimedia como por ejemplo, img, input, button, textarea, video, iframe, audio, a estas se les puede dar alto y ancho, A inline no se le puede dar alto y ancho*/
+.logo{
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+}
 
+nav{
+    text-align: center;
+}
+.link{
+    display: inline-block; /* aca usamos estas propiedades, usamos inline block */
+    background-color: transparent;
+    background-color: #d4baed;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    }
+.caja{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    margin-top: 80px;
+    color: white;
+    padding-left: 80px;
+    box-sizing: border-box;  /* esta propidad hace que no se modifiquen los tamaños de las cajas y usamos el asterisco para que lo hag aen todas, no lo usemos aqui */
+    }
+    
+.cajita{/* aca vamos a emular la caja de una pagina real */
+    color: #555555;
+    background-color: #EEEEEE;
+    width: 700px; /* siempre se pone primero el width y despues el height */
+    padding: 30px 15px;  /* esto modifica el padding sin tener que stcribirlo varias veces, ponemos los valores todos juntos, y asi se lo abrevia */
+    border: 1px solid black; /* esto aplica bordes, si quiero bottom, left o right lo aplico, los mismo para el estilo */
+    font-size: 20px;
+    border-radius: 5px; /*  redondea las aristas de las cajas */
+    text-align: center;
+}
