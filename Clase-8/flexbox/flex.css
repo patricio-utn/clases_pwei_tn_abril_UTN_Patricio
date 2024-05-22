@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.padre{
+    background-color: green;
+    height: 100vh;/* vh es viweport height(toda la parte visble de la pagina, sin caontar la parte de arriba del navegador) y height es el alto y todo esto se acomoda a todas la pantallas, eso si pongo 100 */
+    width: 100vw; /* viewport widht */
+    display: flex; /*  si trabajamos con flex box siempre usamos flex, y siempre en el padre */
+    gap: 20px; /*  sepaar las cajas  */
+    flex-wrap: wrap; /* cuando no hay espacio, las cajitas se van adaptando abajo */
+}
+
+.padre .hijo{/* todos los hijos que esten dentro de este padre, no los de afuera */ /*  esto vale mas que hijo solo */
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: blueviolet; /* son 3 cajas porqeu son 3 hijos */
+}
+.padre .especial{
+    background-color: red;
+}
