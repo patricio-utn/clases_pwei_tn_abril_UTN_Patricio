@@ -5,12 +5,17 @@
     font-family: sans-serif;
 }
 .padre{
+    padding: 200PX;/*padding: 0 50px;  *//* me separa las cajitas de lso bordes, se usa mucho combinado con justify-content: space betweend */
     background-color: green;
     height: 100vh;/* vh es viweport height(toda la parte visble de la pagina, sin caontar la parte de arriba del navegador) y height es el alto y todo esto se acomoda a todas la pantallas, eso si pongo 100 */
     width: 100vw; /* viewport widht */
     display: flex; /*  si trabajamos con flex box siempre usamos flex, y siempre en el padre */
-    gap: 20px; /*  sepaar las cajas  */
-    flex-wrap: wrap; /* cuando no hay espacio, las cajitas se van adaptando abajo */
+    flex-direction: column;
+    gap: 50px; /*  separa las cajas entre si, no lo brdes  */
+    justify-content:end; /* este atributo cambia de lugar las cajitas, ajusta en el eje x */
+    align-items: end; /* ALINEA EN FORMA VERTICAL, en el eje Y */
+    flex-wrap: wrap; /* cuando no hay espacio, las cajitas se van adaptando abajo, si po "no" se anula el wrap */
+    
 }
 
 .padre .hijo{/* todos los hijos que esten dentro de este padre, no los de afuera */ /*  esto vale mas que hijo solo */
