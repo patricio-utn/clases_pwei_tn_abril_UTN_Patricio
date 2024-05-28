@@ -1,12 +1,20 @@
+/* hay que ir a una pagina llamada bootstrap para elegir los iconos que queremso usar, y elegir abajo de todo en la pestaña de CDN. por ahora, y elegimos le @import para que lo importemos solo una vez y pegarlo una sola vez arriba de la liena d etodo de CSS, los @import van arriba */
+/* en la pagina de boottrap vamos al buscador y ponemos el nombre el icono que vamos a usar, buscar varias opciones hasta encontra el icono que quiero, en el caso del corazon pongo la palabra "heart", y me lleva a otra pagina y busco el "icon font", y copio ese codigo y lo puedo tratar como texto y darle color, tamaño etc. */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-*{
+/* aca pegamos el import de google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    /* esta es la normalizacion del CSS */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
 
 }
+
 /* principio color card style */
+<<<<<<< HEAD
 
 .color-card{
     width: 250px;
@@ -14,23 +22,100 @@
     display: flex;
     background-color: aqua;
 
-}
-.color-card .colors{
-
-}
-.color-card .colors .color{
-
-} 
-
-.color-card .color-card-controls{
-
-} 
-
-.color-card .color-card-controls .btn-like{
-
+=======
+.colors-cards {
+    /* de esta forma pongo un gap y en row a las cajitas, en al section*/
+    display: flex;
+    gap: 10px;
+    width: calc(250px * 4 + 20px * 3 + 20px * 2); /*  aca defino mi seccion para que solo entren 4 cartas, sumo el gap y el padding, el ancho de las cartas */
+    padding: 0 20px;
+    flex-wrap: wrap; /* PARA QEU CUANDO HAY MAS HIJOIS VAYAN PARA ABAJOPM EN TANDA DE 4 */
+>>>>>>> b588b9d4dd21b7b0b2e4319a86e32b082e04e2c9
 }
 
-.color-card .color-card-controls .time{
+.color-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 20px;
+    
+    /* sepaar entyre la parte de arriba del boton y la caja pcpal */
 
 }
+
+.color-card .colors {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* se usa valores realtivos al ancho del padre */
+    height: 250px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    overflow: hidden;
+    /* para que siempre se me mantengan los borders radius */
+
+}
+
+/* nth:child, me llama a un color, porque como hay varias cajitas con el mismo nombre yo necesito que me llame a una caja en especifico. */
+.color-card .colors .color:nth-child(1) {
+    /* width: 100%; */
+    /* como div es una etiqeuta en bloque y toamn por defecto todo el ancho disponoble,por lo tanto no es necesario poner el widht, porque seria redundante */
+    /* se en porcentaje, y es 100% por tiene que ser igual al padre, y se pone en % para que si tengamos que hacer cambios en los px del padre, no tengamos qeu calcular cuantos px leva el hijo. En % es mejor.  */
+    height: 40%;
+    /* aca em topma un 40% del padre */
+    background-color: #808836;
+}
+
+.color-card .colors .color:nth-child(2) {
+    height: 30%;
+    /* aca em topma un 30% del padre */
+    background-color: #FFBF00
+}
+
+/* aca hacemos el segundo color con otro porcentaje y asi hacemos todos */
+.color-card .colors .color:nth-child(3) {
+    height: 17%;
+    background-color: #FF9A00;
+}
+
+.color-card .colors .color:nth-child(4) {
+    height: 13%;
+    background-color: #D10363;
+}
+
+.color-card .color-card-controls {
+    display: flex;
+    flex-direction: row;
+    /* vienen por defecto no seria necesario porner row */
+    align-items: center;
+    justify-content: space-between;
+    /* primero hay que definir el padre, para qeu se ajuste, hay que ir al ´padre y definir un ancho, el ancho de un div es el padre. */
+
+}
+
+.color-card .color-card-controls .btn-like {
+    /* como es boton ya tiene una cajita de tipo boton */
+    height: 40px;
+    padding: 0 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.059);
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: none;
+    /* elimina las sombras que puediera haber */
+}
+
+.color-card .color-card-controls .time {
+    color: #000000E6;
+    font-size: 14px;
+
+
+}
+
+
 /* color card styles (END) */
