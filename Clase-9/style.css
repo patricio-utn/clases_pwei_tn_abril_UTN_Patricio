@@ -9,6 +9,10 @@
 /* principio color card style */
 
 .color-card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    background-color: aqua;
 
 }
 .color-card .colors{
