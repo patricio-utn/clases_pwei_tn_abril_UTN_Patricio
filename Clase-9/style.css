@@ -14,6 +14,15 @@
 }
 
 /* principio color card style */
+<<<<<<< HEAD
+
+.color-card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    background-color: aqua;
+
+=======
 .colors-cards {
     /* de esta forma pongo un gap y en row a las cajitas, en al section*/
     display: flex;
@@ -21,6 +30,7 @@
     width: calc(250px * 4 + 20px * 3 + 20px * 2); /*  aca defino mi seccion para que solo entren 4 cartas, sumo el gap y el padding, el ancho de las cartas */
     padding: 0 20px;
     flex-wrap: wrap; /* PARA QEU CUANDO HAY MAS HIJOIS VAYAN PARA ABAJOPM EN TANDA DE 4 */
+>>>>>>> b588b9d4dd21b7b0b2e4319a86e32b082e04e2c9
 }
 
 .color-card {
