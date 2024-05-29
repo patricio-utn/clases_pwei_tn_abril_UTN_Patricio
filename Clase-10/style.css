@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.padre {
+    width: 100vw;
+    /* estas 2 propiedades significa que ocupara el 100% del ancho y alto de la ventana grafica (pantalla completa donde se visualizara la pagina) */
+    height: 100vh;
+    /* idem anterior, */
+    background-color: rgba(172, 255, 47, 0.965);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+.hijo {
+    /* este es el hijo y los cambios se hacen en todos los hijos */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(15, 15, 15);
+    border: 1px solid red;
+
+
+}
+
+.hijo:nth-child(1) {
+    /* y aca lllamamos a cada hijo en particular */
+    background-color: azure;
+}
+
+.hijo:nth-child(2) {
+    /* y aca lllamamos a cada hijo en particular */
+    background-color: blue;
+    position: relative; /* con esta propiedad position: relative, puedeo activar 5 propiedades, bottom, to, left y right, lo cual ahra que mi elemento se mueva par ael lado indicado, excepto el lef y right que se mover para el lado contrario, estas propiedades las puedo usar recien que puse la position: relative */
+    /* left: -200px o 200px; cuando usamoes esta propiedad podemso poner el - o nada par ahacer a la izquierda o la derecha, no haria falta usar el right */
+    /* top: 200px; los mismo quie left usamos el positivo o negativo */
+    
+
+}
+
+.hijo:nth-child(3) {
+    /* y aca lllamamos a cada hijo en particular */
+    background-color: brown;
+    z-index: -1;/* esta propiedad jnosm indica la posicion en profundidad, si es -1 estaria detras de todo, como lo estaria en el eje x, y y z, por eso marca l aprofundidad poreque es z, y par ael lado positivo es infinito y para el lado negativo solo hasta */
+    /* se puede usar sin poner ningun otro elemento */
+
+}
