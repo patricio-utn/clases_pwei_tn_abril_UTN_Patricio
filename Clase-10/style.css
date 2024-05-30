@@ -15,6 +15,9 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    margin-top: 200px;
+    position: relative;
+    /* al poner esto en el padre, ahora el hijo con absolut, va a mantenerse contenido en el pasdre y no fuera de el. */
 
 
 }
@@ -32,22 +35,29 @@
 .hijo:nth-child(1) {
     /* y aca lllamamos a cada hijo en particular */
     background-color: azure;
+    position: fixed;
+    /* se usa cuadno quiero un movimiento exacto, y le tengo que indicar donde se va a ubicar, que left o right quiero o top, etc */
+    left: 200px;
+    top: 10px;
+    z-index: 1;
 }
 
 .hijo:nth-child(2) {
     /* y aca lllamamos a cada hijo en particular */
     background-color: blue;
-    position: relative; /* con esta propiedad position: relative, puedeo activar 5 propiedades, bottom, to, left y right, lo cual ahra que mi elemento se mueva par ael lado indicado, excepto el lef y right que se mover para el lado contrario, estas propiedades las puedo usar recien que puse la position: relative */
+    position: relative;
+    /* con esta propiedad position: relative, puedeo activar 5 propiedades, bottom, to, left y right, lo cual ahra que mi elemento se mueva par ael lado indicado, excepto el lef y right que se mover para el lado contrario, estas propiedades las puedo usar recien que puse la position: relative */
     /* left: -200px o 200px; cuando usamoes esta propiedad podemso poner el - o nada par ahacer a la izquierda o la derecha, no haria falta usar el right */
     /* top: 200px; los mismo quie left usamos el positivo o negativo */
-    
+
 
 }
 
 .hijo:nth-child(3) {
     /* y aca lllamamos a cada hijo en particular */
     background-color: brown;
-    z-index: -1;/* esta propiedad jnosm indica la posicion en profundidad, si es -1 estaria detras de todo, como lo estaria en el eje x, y y z, por eso marca l aprofundidad poreque es z, y par ael lado positivo es infinito y para el lado negativo solo hasta */
+    z-index: -1;
+    /* esta propiedad nos indica la posicion en profundidad, si es -1 estaria detras de todo, como lo estaria en el eje x, y y z, por eso marca l aprofundidad poreque es z, y par ael lado positivo es infinito y para el lado negativo solo hasta */
     /* se puede usar sin poner ningun otro elemento */
 
 }
