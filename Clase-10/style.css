@@ -56,8 +56,9 @@
 .hijo:nth-child(3) {
     /* y aca lllamamos a cada hijo en particular */
     background-color: brown;
-    z-index: -1;
+    z-index: 1;
     /* esta propiedad nos indica la posicion en profundidad, si es -1 estaria detras de todo, como lo estaria en el eje x, y y z, por eso marca l aprofundidad poreque es z, y par ael lado positivo es infinito y para el lado negativo solo hasta */
     /* se puede usar sin poner ningun otro elemento */
+    position: fixed;
 
 }
