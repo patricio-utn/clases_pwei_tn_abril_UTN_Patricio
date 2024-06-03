@@ -35,4 +35,4 @@
         flex-direction: row;
     }
 }
-/* cuando se cumpla la condicion de qu emi pantalla tenga 1000px de ancho como minimo (se va a ejecutar el bloque de codigo, el padre nel padre va a tener un flex direction row, en este caso el ancho condiciona */ /* aca se usan mediaqueries */
+/* cuando se cumpla la condicion de qu emi pantalla tenga 1000px de ancho como minimo (se va a ejecutar el bloque de codigo, el padre nel padre va a tener un flex direction row, en este caso el ancho condiciona */ /* y solo pongo la orden que quiero cambiar */
