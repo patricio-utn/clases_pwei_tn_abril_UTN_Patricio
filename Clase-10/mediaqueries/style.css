@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.padre{
+    width: 100vw;
+    /* height: 100vh; (esto no va tampoco para celular*/ 
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    flex-direction: column;/* para celular siempre se pone esta opcion */
+/*     justify-content: space-between; (ya no tiene sentido ponerla para celular*/
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+
+.hijo{
+    width: 100%; /* poniendo porcentaje, se adapta a la pantalla */
+    height: 250px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+@media screen and (min-width: 1000px) {
+    .padre{
+        flex-direction: row;
+    }
+}
+/* cuando se cumpla la condicion de qu emi pantalla tenga 1000px de ancho como minimo (se va a ejecutar el bloque de codigo, el padre nel padre va a tener un flex direction row, en este caso el ancho condiciona */ /* aca se usan mediaqueries */
