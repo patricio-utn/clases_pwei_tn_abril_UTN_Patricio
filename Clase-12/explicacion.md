@@ -138,10 +138,56 @@ Valor implicito en undefined?
 Si, es Undefined, al no poner ningun valor, implicitamente va a ser Undefined.
 
 CONST
+Es la misma sintaxis de let
+
 Tiene hoisting?
+No tiene hoisting
+
 Se puede reasignar?
+No se puede reasignar.
+
 Se puede redeclarar?
+No se puede redeclarar
+
 Valor implicito en undefined?
+No tiene valor implicito
+
+Bloques y ámbitos
+
+Un bloque de código es cuando uso llaves 
+{esto es un bloque de código
+console.log("hola mundo desde un bloque")
+}
+Ejemplo: 
+let nombre = "pepe"
+
+console.log(nombre)
+{
+    let nombre = "juan"
+    
+    console.log(nombre)
+}
+Acá en este caso la variable let nos distingue entre un bloque y un codigo afuera, me devuelve ambos datos, esto con var no se puede hacer, por eso siempre hay que usar let. Esto se llama alcance local, lo que llamamos dentro del bloque, y las otras se llaman de alcance global, las que estan fuera del bloque.
+
+otro ejemplo:
+
+let name = "rosales"
+
+{
+    let name = "gladys"
+    console.log(name)
+    {
+        let name = "edith"
+        console.log(name)
+    }
+    console.log(name)
+}
+
+console.log(name)
+
+aca primero me va a llamar al primer bloque, luego al segundo bloque, luego como dentro del primer bloue tengo otro console,name y continua con ese y por ultimo llamaria al que esta afuera de ambos bloques.  Pero si ponemos a console.log el que esta afuera de lso bloques y lo pongo abajo de let name =  rosales, los llamados cambiarian por el tema de la cascada. SE puede ir reasignando para no usar tantos let, actuaria como var.
+
+
 
 
 
