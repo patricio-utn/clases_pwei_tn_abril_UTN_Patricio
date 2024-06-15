@@ -17,6 +17,7 @@ var edad = 50
 console.log(edad)
 
 let nombre
+
 nombre = "pepe"
 nombre = "gladys"
 

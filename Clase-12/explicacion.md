@@ -57,6 +57,7 @@ Es un espacio reservado que almacena un dato (referencia), este debe tener un id
 Javascrip es un lenguaje debilmente tipado y de tipado dinamico.
 Debilmente tipado= no necesito especificar que tipo de dato es mi variable.
 Tipado dinamico= puede variar una variable de tipo de dato.
+Siempre se trabaja en LET, cuando usamos una variable.
 
 ejemplo
 
