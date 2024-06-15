@@ -118,9 +118,23 @@ Si, tiene.
 
 LET
 Tiene hoisting?
+No, no tiene hoisting
+
 Se puede reasignar?
+Si, se puede reasignar
+
+ejemplo:
+let nombre
+nombre = "pepe"
+nombre = "julieta" (me va a devolver la ultima variable)
+
+console.log(nombre)
+
 Se puede redeclarar?
+No, no se puede redeclarar, en realidad si se puede redeclarar pero en otro bloque.
+
 Valor implicito en undefined?
+Si, es Undefined, al no poner ningun valor, implicitamente va a ser Undefined.
 
 CONST
 Tiene hoisting?
