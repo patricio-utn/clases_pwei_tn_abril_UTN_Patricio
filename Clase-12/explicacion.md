@@ -52,6 +52,82 @@ Number ("pepe" + 1) aca el 1 se transforma en string, es decir "1" y "pepe" + "1
 Number ("pepe1") (este constructor de números, me dice que "pepe1" no es numero, osea un NaN)
 NaN
 
+Variables
+Es un espacio reservado que almacena un dato (referencia), este debe tener un identificador el cual usaremos para obtener el dato.
+Javascrip es un lenguaje debilmente tipado y de tipado dinamico.
+Debilmente tipado= no necesito especificar que tipo de dato es mi variable.
+Tipado dinamico= puede variar una variable de tipo de dato.
+
+ejemplo
+
+var edad = 50 (esta es mi primera referencia)
+edad = "pepe" (y acá use una reasignacion, ahora me va a mostrar esta)
+
+console.log(edad)
+
+Tipos de variables
+Caracteristicas que deben tener.
+
+Hoisting: es la capacidad de una variable de ser llamada antes de su declaracion.
+Declaracion: es cuando creamos nuestra variable.
+
+Nunca hay que hacer una variable sin declarar.
+
+Sintaxis de declaración: (orden en que se debe escrbir correctamente para que se ejecute)
+<Tipo de variable (var, let etc)> nombre de la variable (se llamam identificador)= dato (lo que va a variar)
+<tipo de varible> identificador = data
+var nombre = "pepe"
+
+
+
+
+
+
+
+VAR
+Tiene hoisting? 
+Si, tiene hoisting
+
+var nombre => aca estamos creando a nustra variable con el identificador edad.
+
+ejemplo:
+console.log(edad) aca pusimos el console.log antes de la declaracion de la variable, y me va a dar un Undefined, osea no me va a dar error, pero no me va a dar la variable.
+var edad = 50
+
+
+Se puede reasignar?
+Si, se puede reasignar.
+
+ejemplo:
+var edad = 50
+edad = "pepe"
+
+Se puede redeclarar?
+Si, se puede. y me mostraria la ultima var, es como una cascada.
+
+ejemplo:
+
+var edad = 50
+var edad = "pepe"
+
+
+Valor implicito en undefined?
+Si, tiene. 
+
+
+
+LET
+Tiene hoisting?
+Se puede reasignar?
+Se puede redeclarar?
+Valor implicito en undefined?
+
+CONST
+Tiene hoisting?
+Se puede reasignar?
+Se puede redeclarar?
+Valor implicito en undefined?
+
 
 
 
