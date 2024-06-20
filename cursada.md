@@ -17,5 +17,8 @@ Siempre se debe escribir el script por encima de la etiqueta final de <body> y e
 Funciones nativas: significa que ya viene incorporado a Javascript.
 
 -isNaN()  es una funcion que recibe un dato y te devuelve un boolean que indica mediante un true o un false si es o no un NaN.
--alert()  es una funcion que recibe un string y lo muestra en un pop up en la pagina.
--
+-alert()  es una funcion que recibe un string y lo muestra en un pop up en la pagina. Sirve para mostar datos e interactua con los usuarios.
+ Ejemplo de como usar alert con una variable
+
+ let variable = isNaN(27)
+ alert(variable)
