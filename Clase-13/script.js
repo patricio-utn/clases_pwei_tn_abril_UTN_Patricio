@@ -80,18 +80,23 @@ else {
 let salario = prompt("ingresa tu salario")
 salario = salario * 12
 alert("su salario anual es de: $" + salario) */
-
+/* 
 let hola =Number(prompt("introduce un numero y mucha suerte"))
 
 if (hola === 3){
     alert("te amo")
 }
 else if(hola === 2 || hola === 1){
-    alert("no te amo")
+/*     alert("no te amo") */
+
+
+let nombre = prompt("adivina el nombre y gana un palo verde")
+while(nombre !== "gladys" ){
+    
+    nombre = prompt("ingresa otro")
+    
 }
-
-
-
+alert("ganaste")
 
 
 

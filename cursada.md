@@ -191,7 +191,25 @@ Claro, aquí tienes una explicación simple paso a paso:
         else maneja cualquier otro valor que no sea 1, 2 o 3.
         Si el valor no es 1, 2 o 3, se muestra un mensaje de alerta con el texto "Entrada no válida". Esta parte es opcional y puedes omitirla si no quieres manejar otros valores específicamente.
 
+Bucles:
+while: me mantiene en un bucle hasta que se ingrese el dato correcto.
 
+ejemplo:
+
+let nombre = prompt("adivina el nombre y gana 1 millon de dolares")
+
+while()
+
+otro ejemplo:
+let nombre = prompt("adivina el nombre y gana un palo verde")
+while(nombre !== "gladys"){
+    
+    nombre = prompt("ingresa otro")
+    
+}
+alert("ganaste")
+
+Acá debo escribir el nombre gladys para que salga el prompt "ganste", si pongo otro nombre distinto me lo va a seguir pidiendo.
 
 
 
