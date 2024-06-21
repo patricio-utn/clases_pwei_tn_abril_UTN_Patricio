@@ -64,7 +64,7 @@ if (dato) {
 else {
     alert("error dato no valido")
 } */
-    let puntos = prompt ("ingresa tus puntos")
+  /*   let puntos = prompt ("ingresa tus puntos")
 
     if(puntos >= 0 && puntos <= 1000){
         alert("principiante")
@@ -74,8 +74,12 @@ else {
     }
     else if(puntos >=2000 && puntos <= 3000){
         alert("experimentado")
-    }
+    } */
 
+/* 
+let salario = prompt("ingresa tu salario")
+salario = salario * 12
+alert("su salario anual es de: $" + salario) */
 
 
 
