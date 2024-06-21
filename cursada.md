@@ -156,7 +156,40 @@ else if(puntos >=1000 && puntos <= 2000){
 else if(puntos >=2000 && puntos <= 3000){
     alert("experimentado")
 }
+let hola = Number(prompt("Introduce un número"));
 
+if (hola === 3) {
+    alert("te amo");
+} else if (hola === 2 || hola === 1) {
+    alert("no te amo");
+} else {
+    alert("Entrada no válida");
+}
+
+
+Claro, aquí tienes una explicación simple paso a paso:
+
+    Solicitar un número al usuario:
+        prompt("Introduce un número") muestra un cuadro de diálogo para que el usuario introduzca un valor.
+        Este valor siempre se recibe como una cadena (string).
+
+    Convertir la cadena a número:
+        Number(prompt("Introduce un número")) convierte la cadena ingresada por el usuario a un número.
+
+    Almacenar el valor convertido:
+        let hola = Number(prompt("Introduce un número")); guarda el valor convertido en la variable hola.
+
+    Comparar el valor con 3:
+        if (hola === 3) verifica si el valor es exactamente igual a 3.
+        Si es igual a 3, se muestra un mensaje de alerta con el texto "te amo".
+
+    Comparar el valor con 2 o 1:
+        else if (hola === 2 || hola === 1) verifica si el valor es exactamente igual a 2 o a 1.
+        Si es igual a 2 o 1, se muestra un mensaje de alerta con el texto "no te amo".
+
+    Manejar otros valores (opcional):
+        else maneja cualquier otro valor que no sea 1, 2 o 3.
+        Si el valor no es 1, 2 o 3, se muestra un mensaje de alerta con el texto "Entrada no válida". Esta parte es opcional y puedes omitirla si no quieres manejar otros valores específicamente.
 
 
 

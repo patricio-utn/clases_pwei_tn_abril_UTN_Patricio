@@ -64,22 +64,34 @@ if (dato) {
 else {
     alert("error dato no valido")
 } */
-  /*   let puntos = prompt ("ingresa tus puntos")
+/*   let puntos = prompt ("ingresa tus puntos")
 
-    if(puntos >= 0 && puntos <= 1000){
-        alert("principiante")
-    }
-    else if(puntos >=1000 && puntos <= 2000){
-        alert("avanzado")
-    }
-    else if(puntos >=2000 && puntos <= 3000){
-        alert("experimentado")
-    } */
+  if(puntos >= 0 && puntos <= 1000){
+      alert("principiante")
+  }
+  else if(puntos >=1000 && puntos <= 2000){
+      alert("avanzado")
+  }
+  else if(puntos >=2000 && puntos <= 3000){
+      alert("experimentado")
+  } */
 
 /* 
 let salario = prompt("ingresa tu salario")
 salario = salario * 12
 alert("su salario anual es de: $" + salario) */
+
+let hola =Number(prompt("introduce un numero y mucha suerte"))
+
+if (hola === 3){
+    alert("te amo")
+}
+else if(hola === 2 || hola === 1){
+    alert("no te amo")
+}
+
+
+
 
 
 
