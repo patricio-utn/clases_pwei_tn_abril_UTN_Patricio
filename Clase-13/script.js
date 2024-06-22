@@ -90,14 +90,52 @@ else if(hola === 2 || hola === 1){
 /*     alert("no te amo") */
 
 
-let nombre = prompt("adivina el nombre y gana un palo verde")
+/* let nombre = prompt("adivina el nombre y gana un palo verde")
 while(nombre !== "gladys" ){
     
     nombre = prompt("ingresa otro")
     
 }
-alert("ganaste")
+alert("ganaste") */
+/* 
+let dato = prompt("pepe")
+/* /* alert(dato) */
+/* let dato = prompt("dime tu edad")
+dato = Number(dato)
+/* alert(typeof(dato)) */ 
+/* let pona = (-16)
+if(!pona){
+alert("ok")
+}
+else{
+    alert("no ok") 
+}
+ */ 
+/* let dato = prompt1)
+if(dato){
+    alert("todo esta bien")
+}
+else{
+    alert ("error dato no valido")
+} */
 
+    
 
+/* if (hola === 3) {
+    alert("te amo");
+} else if (hola === 2 || hola === 1) {
+    alert("no te amo");
+} else {
+    alert("Entrada no válida");
+/* }/*  */
+    /* let nombre = prompt("adivina el nombre y gana un millón de dólares")
+    while(nombre !== "gladys"){    
+        nombre = prompt("ingresa otro")
+        }
+    alert("ganaste")
+/* /* /* /* /*      */ 
+    
+/* let nombre = prompt("coloque su nombre de usuario")
+alert("buen dia, " + nombre) */
 
 
