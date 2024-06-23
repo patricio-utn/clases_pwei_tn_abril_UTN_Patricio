@@ -20,7 +20,7 @@ for(for iterador = valor_inicial; limite (mientras mi iterador sea menor o igual
 
 Ejemplo
 
-let nombre = "juan"
+let iterador = "juan"
 
 for(let iterador = 1; iterador <= 3 (este es el limite); iterador = iterador + 1){
     console.log("me ejecuto")

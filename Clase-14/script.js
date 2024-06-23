@@ -1,13 +1,13 @@
-/* let nombre = "juan"
+/* /* let nombre = "juan"
 
 for(let iterador = 1; iterador <= 3; iterador = iterador + 1){
     console.log("me ejecuto")
-}
-
-for(let i = 1; i <= 10; i = i + 1){
+} */
+/* 
+for(let i = 1; i <= 10; i = i + 1){ */
 /*     alert("mail" + i) */
 
-let sumatoria = 0
+/* let sumatoria = 0
 
 for (let iterador = 1; iterador <= 3; iterador = iterador + 1) {
     let numero = prompt("ingrese un numero")
@@ -17,4 +17,16 @@ for (let iterador = 1; iterador <= 3; iterador = iterador + 1) {
     numero = Number(numero)
     sumatoria = sumatoria + numero
 }
-alert("resultado: " + sumatoria)
+alert("resultado: " + sumatoria) */
+
+/* isNaN(1)
+console. */
+/* 
+let iterador = "juan"
+
+ */
+/* for(let iterador = 1; iterador <= 100; iterador = iterador + 1){
+    console.log("me ejecuto") 
+
+    }
+ */
