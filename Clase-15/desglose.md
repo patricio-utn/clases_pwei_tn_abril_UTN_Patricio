@@ -87,6 +87,276 @@ console.log(auto.anio)
 
 agregue a mi codigo el auto.anio = 2002, y lo puedo ver en consola si lo invoco.
 
+Ejercicio
+
+Cambiar el nombre del mejor amigo a pepe y crear la propiedad nro_celular a personaje.
+
+const persona = {
+    nombre: "patricio",
+    edad: 48,
+    mejorAmiga: {
+        nombre: "zoe",
+        edad: 13
+    }
+}
+
+persona.mejorAmiga = "Gladys"
+persona.nroCelular = "1165738893"
+
+persona.mejorAmiga.nombre = "Gladys"
+console.log(persona.nroCelular)
+
+Acá cree con código algunas propiedades de persona, de esta manera modifico por ejemplo el nombre de mejorAmiga y le agregué a persona una propiedad nueva en este caso nroCelular, en luagar de modificar dentro el key value, lo hice por fuera. Siempre ver bien la ruta. 
+
+Forma distinta que suelen trabajar algunas empresas.
+
+Algunas empresas ponen un espacio entre un nombre y otro. Por ejemplo esto:
+
+const persona = {
+    "nombre completo": "patricio bustos",
+    edad: 48,
+    mejorAmiga: {
+        nombre: "zoe",
+        edad: 13
+    }
+}
+
+Entonces para invocar a nombre completo tengo que usar corchetes, asi:
+
+console.log(persona["nombre completo"])
+
+de esta forma invoco a "nombre completo", esto es en el caso que me lo pongan asi, separado.
+
+                              Arrays
+
+Los arrays se usan para listar elementos.
+
+Ejemplo
+
+let notaTrimestre1 = 9
+let notaTrimestre2 = 10
+let notaTrimestre3 = 6
+
+Esta forma gasta much amas memoria, por eso se usa arrays, par ahacerlo mas ordenado y mas prolijo, entonces se puede hacer asi:
+
+let notasTrimestre = [9, 10, 6]
+
+Estan posicionados por orden no se dice posicion se dice index o indice.
+
+Esta pocision empieza por el 0(cero), es decir el 9 es el index 0, el 10 es el index 1 y el 6 es el index 2.
+
+Como invocarlo por console.log?
+se hace asi:
+
+console.log("tu nota es: " + notasTrimestre[2])
+ y por consola me va a mostar en este caso un 6, que es el index 2.
+
+ Javascript es un lenguaje basado en prototipos.
+
+ Como transformar un array en un objeto:
+
+let notasTrimestre = [9, 10, 6]
+console.log(Object(notasTrimestre))
+
+ creo una consola par allamar a nostasTrimestre y con el constructor de lso objetos lo creo y en consola voy a ver todo el listado y el index de cada nota con las propiedades.
+
+Los arrays se usan siempre con const
+
+Como cambiar el valor de un index:
 
 
+const notasTrimestre = [5, 7, 9]
 
+notasTrimestre[1] = 10
+
+console.log("Tu nueva nota es: " + notasTrimestre[1])
+
+Acá usando la variable const invoco a notasTrimestr y entre [ ]
+pongo el index que quiero cambiar y despues el valor nuevo que voy a poner.
+y por consola voy a ver el nuevo valor que puse.
+
+como saber la longitud de mi array:
+
+const notasTrimestre = [5, 7, 9]
+console.log(notasTrimestre.length)
+
+Usando el length, y por consola voy a ver la cantidad de valores que tengo en mi array.
+
+                       Métodos de los arrays
+
+Los métodos de los arrays en JavaScript son funciones integradas que se utilizan para realizar operaciones comunes en arreglos.
+
+arrays de string
+
+const nombres = [
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
+
+Como eliminar al ultimo elemento de mi array?
+
+const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+
+    delete nombres[5]
+
+    console.log(nombres)
+
+    y por consola me va a mostrar todos los nombre smenos el ultimo
+
+PERO ESTO ES UNA MALA PRACTICA Y NO SE HACE
+
+Metodo pop
+elimina el ultimo elelmento
+
+ejemplo
+
+const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+    nombres.pop()
+
+    console.log(nombres)
+
+    y por consola veo como me elimino el ultimo elemento
+
+Metodo shift
+elimina el primer elemento
+
+const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+    nombres.shift()
+
+    console.log(nombres)
+
+    y por consola veo como me elimino el primer elemento
+
+como ver por consola a que nombre eliminé?
+
+    const nombres = [
+        "pepe",
+        "juan",
+        "maria",
+        "pedro",
+        "valentina",
+        "alex"
+        ]
+    
+        console.log(nombres.shift())
+
+Poniendo asi veo por consola a quien eliminé.
+
+o puedo poner eso en una variable
+
+
+const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+    nombres.shift()
+
+    console.log(nombres)
+
+    y por consola veo como me elimino el primer elemento
+
+como ver por consola a que nombre eliminé?
+
+    const nombres = [
+        "pepe",
+        "juan",
+        "maria",
+        "pedro",
+        "valentina",
+        "alex"
+        ]
+    
+        let eliminado = nombres.shift()
+
+        console.log(eliminado)
+
+        y por consola veo a quien eliminé, en este caso en shift, pero puede usarse con pop o etc.
+ 
+ aca lo hice usando pop
+
+ const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+
+    let eliminado = nombres.pop()
+
+    console.log(eliminado)
+
+    y veo por consola al ultimo eliminado.
+
+    shif y pop devuelven el valor que eliminó.
+
+    Metodo push
+
+    Agrega al final
+
+    ejemplo
+
+    const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+
+    nombres.push("leonel")
+    
+    console.log(nombres)
+
+    Esto me va a msotrar el array con el nuevo elemento que agregué, en este caso "leonel", me retornan la nueva cantidad que tengo en el array.
+
+unshift
+afrega alk inicio un elemento
+
+   const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+
+    nombres.unshift("leonel")
+    
+    console.log(nombres)
+
+    me agrego un nuevo elemento al inicio, en este caso leonel y por conbsola puedo ver el retorno de la lsita de array con este nuevo elemento.
+
+    
