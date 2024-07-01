@@ -128,7 +128,7 @@ const nombres = [
         
         console.log(nombres)  */
 
-        const nombres = [
+/*         const nombres = [
             "pepe",
             "juan",
             "maria",
@@ -139,4 +139,48 @@ const nombres = [
         
             nombres.unshift("leonel")
             
-            console.log(nombres)
+            console.log(nombres) */
+
+   /*          const nombres = [
+                "pepe",
+                "juan",
+                "maria",
+                "pedro",
+                "valentina",
+                "alex"
+                ]
+    
+                let posicionMaria = nombres.indexOf("maria")
+                nombres[posicionMaria] = "marianela"
+                console.log(nombres) */
+
+/*                 const nombres = [
+                    "pepe",
+                    "juan",
+                    "maria",
+                    "pedro",
+                    "valentina",
+                    "alex"
+                    ]
+ /*    
+    nombres.splice(nombres.indexOf("juan"), 1)
+    nombres.splice(nombres.indexOf("maria"), 1) */
+    
+/*     function eliminarNombre(listaDeNombres, nombreAeliminar){
+        listaDeNombres.splice(listaDeNombres.indexOf(nombreAeliminar), 1)
+    }
+    
+    console.log() */
+    const nombres = [
+        "pepe",
+        "juan",
+        "maria",
+        "pedro",
+        "valentina",
+        "alex"
+        ]
+
+nombres.splice(nombres.indexOf("maria"), 0, "carlos", "jose")                   
+
+
+console.log(nombres)

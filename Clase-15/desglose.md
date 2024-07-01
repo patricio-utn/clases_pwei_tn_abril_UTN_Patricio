@@ -7,35 +7,35 @@ let dineroUsuario = 7000
 Se puede hacer algo mejor que esto, usando objetos para llamar a varias propiedades.
 
 let usuario = {
-    edad: 90,
-    nombre: "pepe",
-    dinero:7000
+edad: 90,
+nombre: "pepe",
+dinero:7000
 }
 
 console.log(usuario.dinero)
- Este modelo tiene un nombre, llamado Key valure. Se puede ir llamando con el console log
+Este modelo tiene un nombre, llamado Key valure. Se puede ir llamando con el console log
 
- Ejercicio
+Ejercicio
 
- Crear un objeto llamdo producto que tenga, precio, nombre, descripcion, y marca
+Crear un objeto llamdo producto que tenga, precio, nombre, descripcion, y marca
 
-  let producto = {
-    precio: 5000
-    nombre: pionner djlet
-    descripcion: consola DJ
- }
+let producto = {
+precio: 5000
+nombre: pionner djlet
+descripcion: consola DJ
+}
 
- console.log(producto.nombre)
+console.log(producto.nombre)
 
- Crear un objeto llamado persona, que tenga nombre, edad y mejorAmigo. mejorAmigo debe ser otro objeto que solo tenga nombre y edad.
+Crear un objeto llamado persona, que tenga nombre, edad y mejorAmigo. mejorAmigo debe ser otro objeto que solo tenga nombre y edad.
 
 let persona = {
-    nombre: "patricio",
-    edad: 48,
-    mejorAmiga: {
-        nombre: "zoe",
-        edad: 13
-    }
+nombre: "patricio",
+edad: 48,
+mejorAmiga: {
+nombre: "zoe",
+edad: 13
+}
 }
 
 console.log(persona.mejorAmigo.nombre)
@@ -92,12 +92,12 @@ Ejercicio
 Cambiar el nombre del mejor amigo a pepe y crear la propiedad nro_celular a personaje.
 
 const persona = {
-    nombre: "patricio",
-    edad: 48,
-    mejorAmiga: {
-        nombre: "zoe",
-        edad: 13
-    }
+nombre: "patricio",
+edad: 48,
+mejorAmiga: {
+nombre: "zoe",
+edad: 13
+}
 }
 
 persona.mejorAmiga = "Gladys"
@@ -106,19 +106,19 @@ persona.nroCelular = "1165738893"
 persona.mejorAmiga.nombre = "Gladys"
 console.log(persona.nroCelular)
 
-Acá cree con código algunas propiedades de persona, de esta manera modifico por ejemplo el nombre de mejorAmiga y le agregué a persona una propiedad nueva en este caso nroCelular, en luagar de modificar dentro el key value, lo hice por fuera. Siempre ver bien la ruta. 
+Acá cree con código algunas propiedades de persona, de esta manera modifico por ejemplo el nombre de mejorAmiga y le agregué a persona una propiedad nueva en este caso nroCelular, en luagar de modificar dentro el key value, lo hice por fuera. Siempre ver bien la ruta.
 
 Forma distinta que suelen trabajar algunas empresas.
 
 Algunas empresas ponen un espacio entre un nombre y otro. Por ejemplo esto:
 
 const persona = {
-    "nombre completo": "patricio bustos",
-    edad: 48,
-    mejorAmiga: {
-        nombre: "zoe",
-        edad: 13
-    }
+"nombre completo": "patricio bustos",
+edad: 48,
+mejorAmiga: {
+nombre: "zoe",
+edad: 13
+}
 }
 
 Entonces para invocar a nombre completo tengo que usar corchetes, asi:
@@ -149,21 +149,20 @@ Como invocarlo por console.log?
 se hace asi:
 
 console.log("tu nota es: " + notasTrimestre[2])
- y por consola me va a mostar en este caso un 6, que es el index 2.
+y por consola me va a mostar en este caso un 6, que es el index 2.
 
- Javascript es un lenguaje basado en prototipos.
+Javascript es un lenguaje basado en prototipos.
 
- Como transformar un array en un objeto:
+Como transformar un array en un objeto:
 
 let notasTrimestre = [9, 10, 6]
 console.log(Object(notasTrimestre))
 
- creo una consola par allamar a nostasTrimestre y con el constructor de lso objetos lo creo y en consola voy a ver todo el listado y el index de cada nota con las propiedades.
+creo una consola par allamar a nostasTrimestre y con el constructor de lso objetos lo creo y en consola voy a ver todo el listado y el index de cada nota con las propiedades.
 
 Los arrays se usan siempre con const
 
 Como cambiar el valor de un index:
-
 
 const notasTrimestre = [5, 7, 9]
 
@@ -200,13 +199,13 @@ const nombres = [
 Como eliminar al ultimo elemento de mi array?
 
 const nombres = [
-    "pepe",
-    "juan",
-    "maria",
-    "pedro",
-    "valentina",
-    "alex"
-    ]
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
 
     delete nombres[5]
 
@@ -222,14 +221,14 @@ elimina el ultimo elelmento
 ejemplo
 
 const nombres = [
-    "pepe",
-    "juan",
-    "maria",
-    "pedro",
-    "valentina",
-    "alex"
-    ]
-    nombres.pop()
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
+nombres.pop()
 
     console.log(nombres)
 
@@ -239,14 +238,14 @@ Metodo shift
 elimina el primer elemento
 
 const nombres = [
-    "pepe",
-    "juan",
-    "maria",
-    "pedro",
-    "valentina",
-    "alex"
-    ]
-    nombres.shift()
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
+nombres.shift()
 
     console.log(nombres)
 
@@ -262,23 +261,22 @@ como ver por consola a que nombre eliminé?
         "valentina",
         "alex"
         ]
-    
+
         console.log(nombres.shift())
 
 Poniendo asi veo por consola a quien eliminé.
 
 o puedo poner eso en una variable
 
-
 const nombres = [
-    "pepe",
-    "juan",
-    "maria",
-    "pedro",
-    "valentina",
-    "alex"
-    ]
-    nombres.shift()
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
+nombres.shift()
 
     console.log(nombres)
 
@@ -294,23 +292,23 @@ como ver por consola a que nombre eliminé?
         "valentina",
         "alex"
         ]
-    
+
         let eliminado = nombres.shift()
 
         console.log(eliminado)
 
         y por consola veo a quien eliminé, en este caso en shift, pero puede usarse con pop o etc.
- 
- aca lo hice usando pop
 
- const nombres = [
-    "pepe",
-    "juan",
-    "maria",
-    "pedro",
-    "valentina",
-    "alex"
-    ]
+aca lo hice usando pop
+
+const nombres = [
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
 
     let eliminado = nombres.pop()
 
@@ -336,7 +334,7 @@ como ver por consola a que nombre eliminé?
     ]
 
     nombres.push("leonel")
-    
+
     console.log(nombres)
 
     Esto me va a msotrar el array con el nuevo elemento que agregué, en este caso "leonel", me retornan la nueva cantidad que tengo en el array.
@@ -344,19 +342,86 @@ como ver por consola a que nombre eliminé?
 unshift
 afrega alk inicio un elemento
 
-   const nombres = [
-    "pepe",
-    "juan",
-    "maria",
-    "pedro",
-    "valentina",
-    "alex"
-    ]
+const nombres = [
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
 
     nombres.unshift("leonel")
-    
+
     console.log(nombres)
 
     me agrego un nuevo elemento al inicio, en este caso leonel y por conbsola puedo ver el retorno de la lsita de array con este nuevo elemento.
 
+    como modificar un nombre por otro?
+
+    indexOf
+    me muestar la posicion o el index de un elemento, eso es para no tener que andar adivinando la posicion de un elemento. SOLAMENTE SE USAN EN ARRAYS DE STRING´S.
+
+    se hace asi:
+
+const nombres = [
+"pepe",
+"juan",
+"maria",
+"pedro",
+"valentina",
+"alex"
+]
+
+let posicionMaria = nombres.indexOf("maria")
+nombres[posicionMaria] = "marianela"
+console.log(nombres)
+
+
+Explicacion: en una variable guardo la ubicacion de "maria", luego creo un array con el nombre que guarde en la variable y lo cambio por el que deseo, en este caso "marianela", y por consola ahora veo la lista con el cambio de elemento, de "maria" ahora lo modifique por "marianela"
+
+SPLICE
+
+ejercicio
+eliminar a juan y maria
+
+const nombres = [
+                "pepe",
+                "juan",
+                "maria",
+                "pedro",
+                "valentina",
+                "alex"
+                ]
+
+ nombres.splice(nombres.indexOf("juan"), 1)
+ nombres.splice(nombres.indexOf("maria"), 1)
     
+    console.log(nombres)
+
+Explicacion:
+
+de esta manera usando dos splice elimino a juan y maria, y lo hice de esta manera porque yo no conozco la pocision de ambos. Si hubiera puesto 2 hubiera eliminado a juan y maria o maria y pedro.
+
+Ejercicio
+
+Mejorar el ejercicio anterior, ya qu eel anterior no cumple el principio dry, usando una funcion llamada eliminarNombre.
+
+Como agregar un o varios elementos a mi array
+
+const nombres = [
+                    "pepe",
+                    "juan",
+                    "maria",
+                    "pedro",
+                    "valentina",
+                    "alex"
+                    ]
+
+ nombres.splice(nombres.indexOf("maria"), 0, "carlos", "jose")                   
+
+
+console.log(nombres)
+
+De esta manera agregue despues de maria 2 nombres mas..
+
