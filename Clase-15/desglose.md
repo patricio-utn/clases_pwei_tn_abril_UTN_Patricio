@@ -423,5 +423,6 @@ const nombres = [
 
 console.log(nombres)
 
-De esta manera agregue despues de maria 2 nombres mas..
+De esta manera agregue despues de maria 2 nombres mas.
+
 
