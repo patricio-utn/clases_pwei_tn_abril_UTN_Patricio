@@ -77,21 +77,20 @@ for(let index = 0; index < nombres.length; index = index + 1){
 
 o mejor aun se puede poner i y listo, ya quedaria abreviado y ya. 
 
-const nombres = ["pepe", "juan", "maria", "ezequiel"]
+onst nombres = ["pepe", "juan", "maria", "ezequiel"]
 
-for(let i = 0; i < nombres.length; index = i + 1){
+for(let i = 0; i < nombres.length; i = i + 1){
     console.log("Hola " + nombres[i])
-     }
+ }
 
      para que se pueda leer mejor vamos a crear una variable, solo par aque se lea mejor y quedde mejor a la vista.
 
-     const nombres = ["pepe", "juan", "maria", "ezequiel"]
+const nombres = ["pepe", "juan", "maria", "ezequiel"]
 
-for(let i = 0; i < nombres.length; index = i + 1){
-let nombre = nombres[i]
-
+for(let i = 0; i < nombres.length; i = i + 1){
+    let nombre = nombres[i]
     console.log("Hola " + nombre)
-     }
+ }
 
-
+Se usaria el singular, y se guarda nombre[i]
 
