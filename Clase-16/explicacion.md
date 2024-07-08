@@ -226,5 +226,66 @@ sumatoriaEdad = sumatoriaEdad + personaje.edad : anteriormente habiamos establec
 
 console.log("La sumatoria de las edades es " + sumatoriaEdad) : nos muestra globalmente por consola la suma de las edades.
 
-Una mejor forma de usar for
+Una mejor forma de usar el codigo anterior usando for of
+
+const personajes = [
+        {
+            nombres: "pepe",
+            apellido: "suarez",
+            edad: 20
+        },
+    
+        {
+            nombres: "maria",
+            apellido: "casanova",
+            edad: 40
+        },
+    
+        {
+            nombres: "ezequiel",
+            apellido: "rodriguez",
+            edad: 35
+        },
+    ]
+
+    for(const personaje of personajes){
+        console.log(personaje)
+    }
+
+Expplicacion del codigo enterior
+
+Se declara un array llamado personajes qu econtiene 3 objetos, cada uno de ellos representa un personaje con 3 propiedades: nombre , apellido, edad.
+
+for(const personaje of personajes) : este bucle recorre cada objeto en el array personajes, en cada iteracion, la variable creada personaje(se usa esta pero puede ponerse lo que uno quiera, generalmente se usa la variable del array pero en singular) contiene uno de los objetos del array. Usando for of se simplifica muchisimo la linea d ecodigo, solo en algunos casos debemos usar la version anterior, de todas formas se puede usar una u otra de acuerdo anustra preferencia.
+
+console.log(personaje) : en cada iteracion, el objeto actual almacenado en la variable personaje se muestra en consola.
+
+La forma anterior usando la suma total de edades
+
+sumEdad = 0
+    const personajes = [
+        {
+            nombres: "pepe",
+            apellido: "suarez",
+            edad: 20
+        },
+    
+        {
+            nombres: "maria",
+            apellido: "casanova",
+            edad: 40
+        },
+    
+        {
+            nombres: "ezequiel",
+            apellido: "rodriguez",
+            edad: 35
+        },
+    ]
+
+    for(const personaje of personajes){
+        console.log(personaje)
+        sumEdad = sumEdad + personaje.edad
+    } 
+console.log("la suma total de edades es " + sumEdad)
 

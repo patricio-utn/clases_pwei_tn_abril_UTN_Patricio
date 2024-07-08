@@ -29,7 +29,7 @@ Has comprado el producto {producto.nombre} x {producto.cantidad} a un precio uni
 
 }  */
 
-    let sumatoriaEdad = 0
+/*     let sumatoriaEdad = 0
     const personajes = [
         {
             nombres: "pepe",
@@ -57,4 +57,31 @@ Has comprado el producto {producto.nombre} x {producto.cantidad} a un precio uni
         sumatoriaEdad = sumatoriaEdad + personaje.edad
     }
     
-    console.log("La sumatoria de las edades es " + sumatoriaEdad)
+    console.log("La sumatoria de las edades es " + sumatoriaEdad) */
+
+   sumEdad = 0
+    const personajes = [
+        {
+            nombres: "pepe",
+            apellido: "suarez",
+            edad: 20
+        },
+    
+        {
+            nombres: "maria",
+            apellido: "casanova",
+            edad: 40
+        },
+    
+        {
+            nombres: "ezequiel",
+            apellido: "rodriguez",
+            edad: 35
+        },
+    ]
+
+    for(const personaje of personajes){
+        console.log(personaje)
+        sumEdad = sumEdad + personaje.edad
+    } 
+console.log("la suma total de edades es " + sumEdad)
