@@ -289,3 +289,269 @@ sumEdad = 0
     } 
 console.log("la suma total de edades es " + sumEdad)
 
+for in
+
+Recorre las keys(las propiedades del objeto)
+
+Ejemplo
+
+const datos = {
+    nombre: "pepe"
+    apellido: "suarez"
+    dni: "526587454"
+}
+
+for(let propiedad in datos){
+    console.log(propiedad)
+}
+
+Explicacion del codigo
+
+const datos = {
+    nombre: "pepe"
+    apellido: "suarez"
+    dni: "526587454"
+}
+
+Creo un objeto con 3 propiedades, nombre, apellido y dni.
+
+for(let propiedad in datos) : hago un for in con una variable llamada propiedad, la cual recorrera mi objeto y me mostrara las propiedades del mismo.
+
+console.log(propiedad) : me muestra por consola la variable propiedad, donde se fueron guardando las propiedades de mi objeto, nombre, apellido y dni.
+
+Utilizacion practica del codigo anterior
+
+const datos = {
+    nombre: "pepe"
+    apellido: "suarez"
+    dni: "526587454"
+}
+
+let resultado = " "
+
+for(let propiedad in datos){
+    resultado = resultado + "\n " + propiedad +": " + datos[propiedad];
+}
+
+Explicacion del codigo anterior
+
+const datos = {
+    nombre: "pepe",
+    apellido: "suarez",
+    dni: "526587454",
+}
+
+const datos: Se declara un objeto datos usando const, lo que significa que no se puede reasignar a otra referencia, pero sus propiedades sí pueden ser modificadas.
+
+El objeto datos contiene tres propiedades:
+
+    nombre: Tiene el valor "pepe".
+    apellido: Tiene el valor "suarez".
+    dni: Tiene el valor "526587454".
+
+Inicializacion de la variable resultado
+
+let resultado = ""  : Se declara una variable resultado usando let, permitiendo que su valor sea reasignado. Inicialmente, resultado es una cadena vacía (""), se ponen comillas vacias, als cuales luego contendran el resultado de la iteracion. Esto define una cadena vacía llamada resultado que se usará para guardar el resultado final.
+
+for(let propiedad in datos) : con for in, recorro todas las propiedades de un objeto, una por una.
+
+Propiedad, es una variable que representa el nombre de cada propiedad del objeto datos en cada iteracion del bucle.
+
+resultado = resultado + "\n " + propiedad +": " + datos[propiedad]; : 
+
+resultado es una variable que acumula (o guarda) la información que queremos mostrar al final.
+
+"\n" es un código especial que significa "nueva línea", sirve para añadir un salto de línea en el texto. Para que no quede todo junto, sino que se muestren una propiedad del objeto debajo de la otra.
+
+propiedad es el nombre de cada propiedad del objeto datos.
+
+datos[propiedad] es la manera de acceder al valor de cada propiedad del objeto datos. Los corchetes nos permiten acceder al valor de la propiedad, y en cada iteracion se mostrara por consola el valor de cada propiedad.
+
+Metodos avanzados de array
+
+for each
+
+  const personajes = [
+        {
+            nombres: "pepe",
+            apellido: "suarez",
+            edad: 20
+        },
+    
+        {
+            nombres: "maria",
+            apellido: "casanova",
+            edad: 40
+        },
+    
+        {
+            nombres: "ezequiel",
+            apellido: "rodriguez",
+            edad: 35
+        },
+    ]
+personajes.forEach(function (personaje){
+        console.log(personaje)
+    })
+
+Explicacion del codigo
+
+Con forEach iteramos cada elemento, este caso es un objeto, del array, cuando se usa forEach debemos pasarle una funcion que se ejecutara para cada elemento del array, y se usa usa una funcion anonima, y se llama asi porque no tiene nombre. la funtion toma un parametro en este caso llamado personaje, y representa cada elemento en cada iteracion.
+
+filter
+
+const personajes = [
+        {
+            nombres: "pepe",
+            apellido: "suarez",
+            edad: 20
+        },
+    
+        {
+            nombres: "maria",
+            apellido: "casanova",
+            edad: 40
+        },
+    
+        {
+            nombres: "ezequiel",
+            apellido: "rodriguez",
+            edad: 35
+        },
+    ]
+
+    const personajesMayoresDeEdad = personajes.filter(function(personaje){
+            return personaje.edad >= 18
+        })
+
+        console.log(personajesMayoresDeEdad)
+
+ Filter es un metodo de array que crea un nuevo array con todos los elementos que pasen por una prueba especifica, en este caso los mayores o igual a 18 años. Y en consola me retorna un array con el filtro echo, es decir nos retorna un nuevo array con el filtro que necesitamos o le pedimos. 
+Le decimos metodo avanzado a un metodo que recibe una callback.
+
+Que es una callback?
+
+callback es una funcion que defino y luego la entrego a otra funcion, es simplemente una forma de decirle a otra funcion que hacer cuando termine algo, proporcionandole una funcion para que la ejecute mas tarde.
+
+Si el valor de retorno de callback es trurty entonces el elemento se agregara al array resultante.
+Si el valor de retorno de callback es falsy entonces se ignorara y se va a pasar al siguiente elemento.
+SIEMPRE FILTER RETORNARA UN ARRAY.
+
+Ejercicio
+
+-1-Traer los productos que sean de precio inferior a 2950
+-2-Traer los productos de la marca noblex 
+-3-Traer lso productos que en su nombre incluyan a string "tv"
+
+Ejercicio 1
+
+const productos = [
+            {
+                nombre: "tv samsung",
+                marca: "samsung",
+                id: 1,
+                precio: 3000
+            },
+            {
+                nombre: "celular samsung",
+                marca: "samsung",
+                id: 4,
+                precio: 1100
+            },
+            
+            {
+                nombre: "tv lg",
+                marca: "lg",
+                id: 2,
+                precio: 2900
+            },
+            {
+                nombre: "tv noblex",
+                marca: "noblex",
+                id: 2,
+                precio: 2300
+            },
+        ]
+        
+        const PrecioInferior = productos.filter(function(producto){
+        return producto.precio < 2950
+        })
+
+        console.log(PrecioInferior)
+
+
+ejercicio 2
+
+
+const productos = [
+            {
+                nombre: "tv samsung",
+                marca: "samsung",
+                id: 1,
+                precio: 3000
+            },
+            {
+                nombre: "celular samsung",
+                marca: "samsung",
+                id: 4,
+                precio: 1100
+            },
+            
+            {
+                nombre: "tv lg",
+                marca: "lg",
+                id: 2,
+                precio: 2900
+            },
+            {
+                nombre: "tv noblex",
+                marca: "noblex",
+                id: 2,
+                precio: 2300
+            },
+        ]
+        
+        const MarcaNoblex = productos.filter(function(producto){
+        return producto.marca.toLowerCase() === ("noblex".toLowerCase())
+        })
+
+        console.log(MarcaNoblex)
+
+        ejercicio 3
+
+        const productos = [
+            {
+                nombre: "tv samsung",
+                marca: "samsung",
+                id: 1,
+                precio: 3000
+            },
+            {
+                nombre: "celular samsung",
+                marca: "samsung",
+                id: 4,
+                precio: 1100
+            },
+            
+            {
+                nombre: "tv lg",
+                marca: "lg",
+                id: 2,
+                precio: 2900
+            },
+            {
+                nombre: "tv noblex",
+                marca: "noblex",
+                id: 2,
+                precio: 2300
+            },
+        ]
+        
+       const stringTV = productos.filter(function(producto){
+                return (producto.nombre.toLowerCase().includes("tv".toLowerCase()))
+                })
+        
+                console.log(stringTV)
+en este ejemplo se usa toLowerCase() para que compare minuscula con mayuscula y en el filtrado le sea indistinto mayuscula o minuscula, eso es por si el usuario se equivoca y pone mayuscula en lugar de minuscula. 
+
+
