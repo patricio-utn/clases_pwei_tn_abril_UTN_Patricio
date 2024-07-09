@@ -129,11 +129,11 @@ opcional
 Al finalizar el recorrido mostar por consola "total de edades: {sumatoria de las edades de los usuarios}"
 
 const personajes = [
-    {
-        nombres: "pepe",
-        apellido: "suarez",
-        edad: 20
-    },
+{
+nombres: "pepe",
+apellido: "suarez",
+edad: 20
+},
 
     {
         nombres: "maria",
@@ -146,10 +146,11 @@ const personajes = [
         apellido: "rodriguez",
         edad: 35
     },
+
 ]
 
 for (let index = 0; index < personajes.length; index = index + 1) {
-    let personaje = personajes[index]
+let personaje = personajes[index]
 
     console.log("Hola mi nombre es " + personaje.nombres + " " + personaje.apellido + " y tengo " + personaje.edad + " años")
 
@@ -157,7 +158,7 @@ for (let index = 0; index < personajes.length; index = index + 1) {
 
 Explicacion del codigo
 
-Tenemos que recorrer el array y por consola nos deberia mostrar "Hola mi nombre es {personaje.nombre} {apellido.nombre} y tengo {personaje.edad} años" 
+Tenemos que recorrer el array y por consola nos deberia mostrar "Hola mi nombre es {personaje.nombre} {apellido.nombre} y tengo {personaje.edad} años"
 
 Deberia aparecer una leyenda parecida por cada personaje con sus datos.
 
@@ -169,7 +170,6 @@ let index = 0; : nos esta indicando que iniciara el recorrido desde el elemento 
 
 index < personajes.length; : esta condicion nos asegura que el bucle recorra todo el array, porque el estamos diciendo con length que recorra todo el "largo" del array, una vez que lo recorrio el bucle for finaliza.
 
-
 index = index + 1 : esta condicion nos indica que el bucle de saltarse de uno en uno, es decir primero recoore el elemento 0 "pepe", la condicion index = index + 1 nos indica que se pase al siguiente elemento 1 que es "maria", entonces el bucle va pasando de uno en uno los elementos, si por ejemplo pusieramos index = index + 2, el bucle primero pasa por elemento 0 "pepe" y cuando vuelva a recorrer el array pasaria por el elemento 2 que es "ezequiel", salteandose el elemento 1 que es ""maria, en resumen si ponemos 1, recorre de uno en uno todo el array, si ponemos 2 recorre de 2 en 2 el array, si ponemos 3 recorre de 3 en 3 y asi sucesivamente.
 
 y ahora creamos una variable
@@ -179,9 +179,9 @@ const personaje = personajes[index]; : esto toma el elemento del array "personaj
 y ahora console.log
 
 Nos mostrara en consola del navegador el contenido del objeto "personaje" que hemos seleccionado del array "personajes", en este caso nos mostrara los 3 objetos porque asi fue como lo indicamos en index < personajes.length; dentyro del bucle for.
-Importante: las " " nos genera un espacio. 
+Importante: las " " nos genera un espacio.
 
- console.log("Hola mi nombre es " + personaje.nombres + " " + personaje.apellido + " y tengo " + personaje.edad + " años")
+console.log("Hola mi nombre es " + personaje.nombres + " " + personaje.apellido + " y tengo " + personaje.edad + " años")
 
 y ahora la segunda parte del ejercicio
 
@@ -190,11 +190,11 @@ Al finalizar el recorrido mostar por consola "total de edades: {sumatoria de las
 
 let sumatoriaEdad = 0
 const personajes = [
-    {
-        nombres: "pepe",
-        apellido: "suarez",
-        edad: 20
-    },
+{
+nombres: "pepe",
+apellido: "suarez",
+edad: 20
+},
 
     {
         nombres: "maria",
@@ -207,13 +207,15 @@ const personajes = [
         apellido: "rodriguez",
         edad: 35
     },
+
 ]
 
 for (let index = 0; index < personajes.length; index = index + 1) {
-    const personaje = personajes[index]
+const personaje = personajes[index]
 
     console.log("Hola mi nombre es " + personaje.nombres + " " + personaje.apellido + " y tengo " + personaje.edad + " años")
     sumatoriaEdad = sumatoriaEdad + personaje.edad
+
 }
 
 console.log("La sumatoria de las edades es " + sumatoriaEdad)
@@ -222,25 +224,25 @@ Explicación del codigo
 
 let sumatoriaEdad = 0 : primero creo esta variable al principio del resto del codigo antes de que comience cualquier operacion de suma dentro del bucle for, porque cuando es un acumulador la variable la tengo que poner afuera, y se establece de manera explicita que "sumatoriaEdad" comienza con un valor de cero, esto es importante porque indica desde el principio cual sera el estado inicial de "sumatoiriaEdad" antes de realizar cualquier operacion de suma.
 
-sumatoriaEdad = sumatoriaEdad + personaje.edad : anteriormente habiamos establecido ela variable sumatoriaEdad = 0, en la cual se van a almacenar las edades de todos los personajes, con esta declaracion, sumatoriaEdad = sumatoriaEdad + personaje.edad,  estamos queriendo que en cada iteracion se vaya sumando las edades de los personajes en la variable, sumatoriaEdad.
+sumatoriaEdad = sumatoriaEdad + personaje.edad : anteriormente habiamos establecido ela variable sumatoriaEdad = 0, en la cual se van a almacenar las edades de todos los personajes, con esta declaracion, sumatoriaEdad = sumatoriaEdad + personaje.edad, estamos queriendo que en cada iteracion se vaya sumando las edades de los personajes en la variable, sumatoriaEdad.
 
 console.log("La sumatoria de las edades es " + sumatoriaEdad) : nos muestra globalmente por consola la suma de las edades.
 
 Una mejor forma de usar el codigo anterior usando for of
 
 const personajes = [
-        {
-            nombres: "pepe",
-            apellido: "suarez",
-            edad: 20
-        },
-    
+{
+nombres: "pepe",
+apellido: "suarez",
+edad: 20
+},
+
         {
             nombres: "maria",
             apellido: "casanova",
             edad: 40
         },
-    
+
         {
             nombres: "ezequiel",
             apellido: "rodriguez",
@@ -263,19 +265,19 @@ console.log(personaje) : en cada iteracion, el objeto actual almacenado en la va
 La forma anterior usando la suma total de edades
 
 sumEdad = 0
-    const personajes = [
-        {
-            nombres: "pepe",
-            apellido: "suarez",
-            edad: 20
-        },
-    
+const personajes = [
+{
+nombres: "pepe",
+apellido: "suarez",
+edad: 20
+},
+
         {
             nombres: "maria",
             apellido: "casanova",
             edad: 40
         },
-    
+
         {
             nombres: "ezequiel",
             apellido: "rodriguez",
@@ -286,7 +288,8 @@ sumEdad = 0
     for(const personaje of personajes){
         console.log(personaje)
         sumEdad = sumEdad + personaje.edad
-    } 
+    }
+
 console.log("la suma total de edades es " + sumEdad)
 
 for in
@@ -296,21 +299,21 @@ Recorre las keys(las propiedades del objeto)
 Ejemplo
 
 const datos = {
-    nombre: "pepe"
-    apellido: "suarez"
-    dni: "526587454"
+nombre: "pepe"
+apellido: "suarez"
+dni: "526587454"
 }
 
 for(let propiedad in datos){
-    console.log(propiedad)
+console.log(propiedad)
 }
 
 Explicacion del codigo
 
 const datos = {
-    nombre: "pepe"
-    apellido: "suarez"
-    dni: "526587454"
+nombre: "pepe"
+apellido: "suarez"
+dni: "526587454"
 }
 
 Creo un objeto con 3 propiedades, nombre, apellido y dni.
@@ -322,23 +325,23 @@ console.log(propiedad) : me muestra por consola la variable propiedad, donde se 
 Utilizacion practica del codigo anterior
 
 const datos = {
-    nombre: "pepe"
-    apellido: "suarez"
-    dni: "526587454"
+nombre: "pepe"
+apellido: "suarez"
+dni: "526587454"
 }
 
 let resultado = " "
 
 for(let propiedad in datos){
-    resultado = resultado + "\n " + propiedad +": " + datos[propiedad];
+resultado = resultado + "\n " + propiedad +": " + datos[propiedad];
 }
 
 Explicacion del codigo anterior
 
 const datos = {
-    nombre: "pepe",
-    apellido: "suarez",
-    dni: "526587454",
+nombre: "pepe",
+apellido: "suarez",
+dni: "526587454",
 }
 
 const datos: Se declara un objeto datos usando const, lo que significa que no se puede reasignar a otra referencia, pero sus propiedades sí pueden ser modificadas.
@@ -351,13 +354,13 @@ El objeto datos contiene tres propiedades:
 
 Inicializacion de la variable resultado
 
-let resultado = ""  : Se declara una variable resultado usando let, permitiendo que su valor sea reasignado. Inicialmente, resultado es una cadena vacía (""), se ponen comillas vacias, als cuales luego contendran el resultado de la iteracion. Esto define una cadena vacía llamada resultado que se usará para guardar el resultado final.
+let resultado = "" : Se declara una variable resultado usando let, permitiendo que su valor sea reasignado. Inicialmente, resultado es una cadena vacía (""), se ponen comillas vacias, als cuales luego contendran el resultado de la iteracion. Esto define una cadena vacía llamada resultado que se usará para guardar el resultado final.
 
 for(let propiedad in datos) : con for in, recorro todas las propiedades de un objeto, una por una.
 
 Propiedad, es una variable que representa el nombre de cada propiedad del objeto datos en cada iteracion del bucle.
 
-resultado = resultado + "\n " + propiedad +": " + datos[propiedad]; : 
+resultado = resultado + "\n " + propiedad +": " + datos[propiedad]; :
 
 resultado es una variable que acumula (o guarda) la información que queremos mostrar al final.
 
@@ -371,28 +374,29 @@ Metodos avanzados de array
 
 for each
 
-  const personajes = [
-        {
-            nombres: "pepe",
-            apellido: "suarez",
-            edad: 20
-        },
-    
+const personajes = [
+{
+nombres: "pepe",
+apellido: "suarez",
+edad: 20
+},
+
         {
             nombres: "maria",
             apellido: "casanova",
             edad: 40
         },
-    
+
         {
             nombres: "ezequiel",
             apellido: "rodriguez",
             edad: 35
         },
     ]
+
 personajes.forEach(function (personaje){
-        console.log(personaje)
-    })
+console.log(personaje)
+})
 
 Explicacion del codigo
 
@@ -401,18 +405,18 @@ Con forEach iteramos cada elemento, este caso es un objeto, del array, cuando se
 filter
 
 const personajes = [
-        {
-            nombres: "pepe",
-            apellido: "suarez",
-            edad: 20
-        },
-    
+{
+nombres: "pepe",
+apellido: "suarez",
+edad: 20
+},
+
         {
             nombres: "maria",
             apellido: "casanova",
             edad: 40
         },
-    
+
         {
             nombres: "ezequiel",
             apellido: "rodriguez",
@@ -426,7 +430,7 @@ const personajes = [
 
         console.log(personajesMayoresDeEdad)
 
- Filter es un metodo de array que crea un nuevo array con todos los elementos que pasen por una prueba especifica, en este caso los mayores o igual a 18 años. Y en consola me retorna un array con el filtro echo, es decir nos retorna un nuevo array con el filtro que necesitamos o le pedimos. 
+Filter es un metodo de array que crea un nuevo array con todos los elementos que pasen por una prueba especifica, en este caso los mayores o igual a 18 años. Y en consola me retorna un array con el filtro echo, es decir nos retorna un nuevo array con el filtro que necesitamos o le pedimos.
 Le decimos metodo avanzado a un metodo que recibe una callback.
 
 Que es una callback?
@@ -440,25 +444,25 @@ SIEMPRE FILTER RETORNARA UN ARRAY.
 Ejercicio
 
 -1-Traer los productos que sean de precio inferior a 2950
--2-Traer los productos de la marca noblex 
+-2-Traer los productos de la marca noblex
 -3-Traer lso productos que en su nombre incluyan a string "tv"
 
 Ejercicio 1
 
 const productos = [
-            {
-                nombre: "tv samsung",
-                marca: "samsung",
-                id: 1,
-                precio: 3000
-            },
-            {
-                nombre: "celular samsung",
-                marca: "samsung",
-                id: 4,
-                precio: 1100
-            },
-            
+{
+nombre: "tv samsung",
+marca: "samsung",
+id: 1,
+precio: 3000
+},
+{
+nombre: "celular samsung",
+marca: "samsung",
+id: 4,
+precio: 1100
+},
+
             {
                 nombre: "tv lg",
                 marca: "lg",
@@ -472,31 +476,29 @@ const productos = [
                 precio: 2300
             },
         ]
-        
+
         const PrecioInferior = productos.filter(function(producto){
         return producto.precio < 2950
         })
 
         console.log(PrecioInferior)
 
-
 ejercicio 2
 
-
 const productos = [
-            {
-                nombre: "tv samsung",
-                marca: "samsung",
-                id: 1,
-                precio: 3000
-            },
-            {
-                nombre: "celular samsung",
-                marca: "samsung",
-                id: 4,
-                precio: 1100
-            },
-            
+{
+nombre: "tv samsung",
+marca: "samsung",
+id: 1,
+precio: 3000
+},
+{
+nombre: "celular samsung",
+marca: "samsung",
+id: 4,
+precio: 1100
+},
+
             {
                 nombre: "tv lg",
                 marca: "lg",
@@ -510,7 +512,7 @@ const productos = [
                 precio: 2300
             },
         ]
-        
+
         const MarcaNoblex = productos.filter(function(producto){
         return producto.marca.toLowerCase() === ("noblex".toLowerCase())
         })
@@ -532,7 +534,7 @@ const productos = [
                 id: 4,
                 precio: 1100
             },
-            
+
             {
                 nombre: "tv lg",
                 marca: "lg",
@@ -546,12 +548,76 @@ const productos = [
                 precio: 2300
             },
         ]
-        
+
        const stringTV = productos.filter(function(producto){
                 return (producto.nombre.toLowerCase().includes("tv".toLowerCase()))
                 })
-        
-                console.log(stringTV)
-en este ejemplo se usa toLowerCase() para que compare minuscula con mayuscula y en el filtrado le sea indistinto mayuscula o minuscula, eso es por si el usuario se equivoca y pone mayuscula en lugar de minuscula. 
 
+                console.log(stringTV)
+
+en este ejemplo se usa toLowerCase() para que compare minuscula con mayuscula y en el filtrado le sea indistinto mayuscula o minuscula, eso es por si el usuario se equivoca y pone mayuscula en lugar de minuscula.
+
+toLowerCase() : es un método y va siepre con paréntesis al final, aunque no se los use.
+
+find
+
+find es un metodo avanzado que recibe una callback, la callback recibe a el elemento.
+Si el valor de retorno es callback es thurty entonces el elemento se retornara y se cortara el find.
+Si el valor de retorno de callback es falsy entonces se ignorará y pasará al siguiente elemento.
+FIND puede retornar el elemento o undefined sino encuentra ningun elemento.
+Sirve para buscar puntualmente un valor de una propiedad de elemento, en este caso el elemento es un objeto.
+FIND retorna el objeto
+
+ejemplo
+
+const personajes = [
+    {
+        nombres: "pepe",
+        apellido: "suarez",
+        edad: 20
+    },
+
+    {
+        nombres: "maria",
+        apellido: "casanova",
+        edad: 40
+    },
+
+    {
+        nombres: "ezequiel",
+        apellido: "rodriguez",
+        edad: 35
+    },
+]
+
+const pepe = personajes.find(function (personaje) {
+    return personaje.nombres === "pepe"
+})
+
+console.log(pepe);
+
+Este código define un array personajes con objetos que representan personas. Luego, utiliza el método .find() para buscar y almacenar en la variable pepe el objeto cuyo nombre sea "pepe". Finalmente, muestra el objeto encontrado en la consola.
+
+map
+
+El método map() es útil cuando necesitas transformar todos los elementos de un array de una manera específica y crear un nuevo array con los resultados de esas transformaciones.
+
+Ejemplo
+const objetos = [
+    {
+        nombre: "vaso"
+    },
+    {
+        nombre: "tornillo"
+    },
+    {
+        nombre: "computadora"
+    }
+]
+
+const listaDeObjetosHTML = objetos.map(function(objeto){
+    return "<div>" + objeto.nombre + "</div>";
+})
+
+console.log(listaDeObjetosHTML);
 
