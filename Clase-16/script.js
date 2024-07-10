@@ -31,7 +31,7 @@ const objetos = [
 ]
 
 const listaDeObjetosHTML = objetos.map(function(objeto){
-    return "<div>" + objeto.nombre + "</div>";
+    return "l";
 })
 
 console.log(listaDeObjetosHTML);
