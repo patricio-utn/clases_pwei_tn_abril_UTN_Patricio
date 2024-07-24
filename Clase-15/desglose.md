@@ -1,16 +1,17 @@
-Objetos
+**Objetos**
 
 let edadUsuario = 90
 let nombreUsuario = "pepe"
 let dineroUsuario = 7000
 
-Se puede hacer algo mejor que esto, usando objetos para llamar a varias propiedades.
+1. Se puede hacer algo mejor que esto, usando objetos para llamar a varias propiedades
 
-let usuario = {
+"""let usuario = {
 edad: 90,
 nombre: "pepe",
 dinero:7000
 }
+"""
 
 console.log(usuario.dinero)
 Este modelo tiene un nombre, llamado Key valure. Se puede ir llamando con el console log

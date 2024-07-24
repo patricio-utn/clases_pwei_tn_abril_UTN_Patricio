@@ -1,83 +1,3 @@
-/* let usuario = {
-    edad: 90,
-    nombre: "pepe",
-    dinero:7000
-}
-
-console.log(usuario.dinero)
-alert("hola") */
-
-/* let producto = {
-    precio: 5000,
-    nombre: "pionner dj",
-    descripcion: "consola DJ",
-}
-
-console.log(producto.nombre) */
-/* 
-let persona = {
-    nombre: "patricio",
-    edad: 48,
-    mejorAmiga: {
-        nombre: "zoe",
-        edad: 13
-    }
-}
-
-console.log(persona.mejorAmiga) */
-
-/* const auto = {nombre: "honda", precio: 6000}
-
-console.log(auto.precio) */
-
-/* const auto = {nombre: "honda", precio: 6000}
-
-auto.precio = 100000
-auto.anio = 2002
-/* auto = "luis" */
-
-/* console.log(auto.precio) */
-
-/* const persona = {
-    nombre: "patricio",
-    edad: 48,
-    mejorAmiga: {
-        nombre: "zoe",
-        edad: 13
-    }
-}
-
-persona.mejorAmiga.nombre = "Gladys"
-persona.nroCelular = "1165738893"
-
-console.log(persona.mejorAmiga.nombre)
-console.log(persona.nroCelular) */
-/* 
-const persona = {
-    "nombre completo": "patricio bustos",
-    edad: 48,
-    mejorAmiga: {
-        nombre: "zoe",
-        edad: 13
-    }
-}
-
-console.log(persona["nombre completo"]) */
-
-/* 
-console.log("tu nota es: " + notasTrimestre[2]) */
-/* let notasTrimestre = [9, 10, 6]
-console.log(Object(notasTrimestre)) */
-
-/* 
-const notasTrimestre = [5, 7, 9]
-
-notasTrimestre[1] = 10
-
-console.log("Tu nueva nota es: " + notasTrimestre[1]) */
-/* 
-const notasTrimestre = [5, 7, 9]
-console.log(notasTrimestre.length) */
 /* const nombres = [
     "pepe",
     "juan",
@@ -86,23 +6,55 @@ console.log(notasTrimestre.length) */
     "valentina",
     "alex"
     ]
-    nombres.pop()
-
-    console.log(nombres) */
-
-   /*  const nombres = [
-        "pepe",
-        "juan",
-        "maria",
-        "pedro",
-        "valentina",
-        "alex"
-        ]
-/*         nombres.shift() */
     
-/*         console.log(nombres.shift()) */
-/* 
+        nombres.unshift("leonel")
+    
+        console.log(nombres) */
+
+/* const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+    ]
+    
+    let posicionMaria = nombres.indexOf("maria")
+    nombres[posicionMaria] = "marianela"
+    console.log(nombres)
+
 const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+];
+
+// Encontrar el índice de 'maria'
+let indiceMaria = nombres.indexOf('maria');
+
+console.log("El índice de 'maria' es:", indiceMaria); */ // Esto mostrará el índice de 'maria' en la consola
+
+/* const nombres = [
+    "pepe",
+    "juan",
+    "maria",
+    "pedro",
+    "valentina",
+    "alex"
+]
+function eliminarNombre(listaDeNombres, nombreAEliminar){
+   
+    listaDeNombres.splice(listaDeNombres.indexOf(nombreAEliminar), 1)
+}
+
+eliminarNombre(nombres, "valentina");
+
+console.log(nombres) */
+/* const nombres = [
     "pepe",
     "juan",
     "maria",
@@ -111,76 +63,228 @@ const nombres = [
     "alex"
     ]
 
-    let eliminado = nombres.pop()
+nombres.splice(nombres.indexOf("maria"), 0, "carlos", "jose")                   
+/* nombres.splice(nombres.indexOf("maria"), 1, "carlos", "jose"); */
+/* console.log(nombres) */
 
-    console.log(eliminado) */
 /* 
-    const nombres = [
-        "pepe",
-        "juan",
-        "maria",
-        "pedro",
-        "valentina",
-        "alex"
-        ]
-    
-        nombres.push("leonel")
-        
-        console.log(nombres)  */
-
-/*         const nombres = [
-            "pepe",
-            "juan",
-            "maria",
-            "pedro",
-            "valentina",
-            "alex"
-            ]
-        
-            nombres.unshift("leonel")
-            
-            console.log(nombres) */
-
-   /*          const nombres = [
-                "pepe",
-                "juan",
-                "maria",
-                "pedro",
-                "valentina",
-                "alex"
-                ]
-    
-                let posicionMaria = nombres.indexOf("maria")
-                nombres[posicionMaria] = "marianela"
-                console.log(nombres) */
-
-/*                 const nombres = [
-                    "pepe",
-                    "juan",
-                    "maria",
-                    "pedro",
-                    "valentina",
-                    "alex"
-                    ]
- /*    
-    nombres.splice(nombres.indexOf("juan"), 1)
-    nombres.splice(nombres.indexOf("maria"), 1) */
-    
-/*     function eliminarNombre(listaDeNombres, nombreAeliminar){
-        listaDeNombres.splice(listaDeNombres.indexOf(nombreAeliminar), 1)
+let persona = {
+    nombre: "patricio",
+    edad: 48,
+    mejorAmiga: {
+    nombre: "zoe",
+    edad: 13
+    }
     }
     
-    console.log() */
-    const nombres = [
-        "pepe",
-        "juan",
-        "maria",
-        "pedro",
-        "valentina",
-        "alex"
-        ]
+    console.log(persona.mejorAmiga.nombre) */
+/* 
+    let dato = 5 {
+        dato = 6
+    }
+    console.log(dato) */
 
-nombres.splice(nombres.indexOf("maria"), 0, "carlos", "jose")                   
+/* var libroAngular = {
+titulo: 'Desarrollo web ágil con AngularJS',
+autor: 'Carlos Azaustre',
+paginas: 64,
+formatos: ["PDF", "ePub", "Mobi"],
+precio: 2.79,
+publicado: true
+};
+
+console.log(libroAngular.publicado) */
+
+/* function suma(num1, num2, num3) {
+    return num1 - num2 * 2 / 10 + num3
+}
 
 
-console.log(nombres)
+console.log("El resultado es " + suma(1, 2, 3)) */
+
+
+
+/* function esVocal(letra){
+    if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return true
+    }
+    else{
+    return false
+    }
+    }
+    
+    const letra = "o";
+    
+    console.log(esVocal(letra)); */
+/*     function esVocal(letra){
+        return (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u")
+        }
+        
+        console.log(esVocal("a"))
+         */
+/* const nombres = ["pepe", "juan", "maria", "Ezequiel"]
+ 
+console.log("hola " + nombres[1]) ) */
+
+/*  for(let iterador = 0; iterador < "4");
+ console.log(iterador) */
+
+/*  for (let iterador = 0; iterador < 4; iterador ++) {
+      console.log(iterador);
+  } */
+
+/* const nombres = ["pepe", "juan", "maria", "Ezequiel", "NANU", "NANCY"]
+
+for (let iterador = 0; iterador < nombres.length; iterador = iterador + 1) {
+    console.log(iterador)
+} */
+
+/*     const nombres = ["pepe", "juan", "maria", "Ezequiel"]
+
+    for(let iterador = 0; iterador < nombres.length; iterador = iterador + 1){
+    console.log("Hola " + nombres[iterador])
+    }
+ /*     */
+/* const nombres = ["pepe", "juan", "maria", "Ezequiel"]
+
+for(let index = 0; index < nombres.length; index = index + 1){
+console.log("Hola " + nombres[index])
+} */
+/* const nombres = ["pepe", "juan", "maria", "Ezequiel"]
+
+for(let i = 0; i < nombres.length; i = i + 1){
+console.log("Hola " + nombres[i])
+} */
+
+/* const nombres = ["pepe", "juan", "maria", "Ezequiel"]
+
+for(let i = 0; i < nombres.length; i = i + 1){
+let nombre = nombres[i]
+console.log("Hola " + nombre)
+} */
+/* const carrito = [
+    {
+        nombre: "tv Samsung",
+        precio: 300,
+        cantidad: 3
+    },
+    {
+        nombre: "patineta",
+        precio: 30,
+        cantidad: 1
+    },
+]
+for (let index = 0; index < carrito.length; index = index + 1) {
+    let producto = carrito[index]
+    console.log("Has comprado el producto " + producto.nombre + " x " + producto.cantidad + " a un precio unitario de " + producto.precio)
+
+} */
+/* const personajes = [
+    {
+        nombres: "pepe",
+        apellido: "Suarez",
+        edad: 20
+    },
+
+    {
+        nombres: "maria",
+        apellido: "casanova",
+        edad: 40
+    },
+
+    {
+        nombres: "Ezequiel",
+        apellido: "Rodríguez",
+        edad: 35
+    },
+]
+
+for (let index = 0; index < personajes.length; index = index + 1) {
+    let personaje = personajes[index]
+    console.log("Hola mi nombre es " + personaje.nombres + " " + personaje.apellido + " y tengo " + personaje.edad + " años")
+} */
+
+/* let sumatoriaEdad = 0
+const personajes = [
+    {
+        nombres: "pepe",
+        apellido: "Suarez",
+        edad: 20
+    },
+
+    {
+        nombres: "maria",
+        apellido: "casanova",
+        edad: 40
+    },
+
+    {
+        nombres: "Ezequiel",
+        apellido: "Rodríguez",
+        edad: 35
+    },
+]
+
+for (let index = 0; index < personajes.length; index = index + 1) {
+    const personaje = personajes[index]
+
+    console.log("Hola mi nombre es " + personaje.nombres + " " + personaje.apellido + " y tengo " + personaje.edad + " años")
+    sumatoriaEdad = sumatoriaEdad + personaje.edad
+}
+
+console.log("La sumatoria de las edades es " + sumatoriaEdad)
+
+ */
+
+/* const personajes = [
+    {
+        nombres: "pepe",
+        apellido: "Suarez",
+        edad: 20
+    },
+
+    {
+        nombres: "maria",
+        apellido: "casanova",
+        edad: 40
+    },
+
+    {
+        nombres: "Ezequiel",
+        apellido: "Rodríguez",
+        edad: 35
+    },
+]
+
+for (const personaje of personajes) {
+    console.log(personaje)
+}
+ */
+
+sumEdad = 0
+const personajes = [
+    {
+        nombres: "pepe",
+        apellido: "Suarez",
+        edad: 20
+    },
+
+    {
+        nombres: "maria",
+        apellido: "casanova",
+        edad: 40
+    },
+
+    {
+        nombres: "ezequiel",
+        apellido: "rodriguez",
+        edad: 35
+    },
+]
+
+for (const personaje of personajes) {
+    console.log(personaje)
+    sumEdad = sumEdad + personaje.edad
+}
+
+console.log("la suma total de edades es " + sumEdad)
